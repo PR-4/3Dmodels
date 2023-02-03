@@ -1,3 +1,4 @@
 # 3Dmodels
-3D structural geological models in Python
-# case of studies using GemPy
+Modelos geológicos sintéticos em 3D
+# Dependências:
+* Gempy
