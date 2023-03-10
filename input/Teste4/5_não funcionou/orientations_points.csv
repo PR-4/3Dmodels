@@ -1,0 +1,5 @@
+X,Y,Z,azimuth,dip,polarity,formation
+40,100,2,90,50,1,Fault1
+50,125,3,0,90,1,Fault1
+90,100,6,90,50,1,Fault1
+80,120,4,0,90,-1,Fault1
