@@ -1,0 +1,5 @@
+X,Y,Z,azimuth,dip,polarity,formation
+150,50,10,90,0,1,camada1
+150,150,10,90,0,1,camada1
+150,250,10,90,0,1,camada1
+150,350,10,90,0,1,camada1
