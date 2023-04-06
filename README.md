@@ -6,9 +6,8 @@ Modelos geológicos sintéticos em 3D
 * Anaconda - https://www.anaconda.com
 
 # Como instalar no Windows:
-- Instale o Anaconda no site oficial https://www.anaconda.com;
-- Crie um enviroment usando o enviroment_gempy_windows.yml;
-    - conda env create -f enviroment_gempy_windows.yml
+- Crie um enviroment usando o gempy_windows.yml;
+    - conda env create -f gempy_windows.yml
 
 # Como instalar no Linux: 
 - conda env create --name gempy
@@ -20,3 +19,5 @@ Modelos geológicos sintéticos em 3D
 - pip install jupyter
 
 # Como instalar no linux com .yml
+- Crie um enviroment usando o gempy_linux.yml
+    - conda env create -f gempy_linux.yml
