@@ -1,0 +1,4 @@
+X,Y,Z,azimuth,dip,polarity,formation
+1200,11250,0,0,0,1,ARIRI
+1300,9000,-100,0,0,1,UBV
+1300,1300,-370,0,0,1,LBV
