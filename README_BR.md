@@ -29,3 +29,10 @@ Modelos geológicos em 3D com Gempy
 - Pequenas Alterações: 1.0.0 to 1.1.0
 - Correções/Patch: 1.0.0 to 1.0.1
 - Pré-lançamento(Alfa/Beta) - 1.0.0-Beta
+
+# Pastas
+- input: Dados de entrada. Crie subpastas para indicar o modelo
+- modules: Criação de modulo para o programa
+- output: Dados gerados. Crie subpastas para indicar o modelo.
+- programs: Programa/notebooks. Crie subpastas para indicar o modelo
+- references: Referencias usadas na criação do modelo. Crie subpastas para indicar o modelo.
