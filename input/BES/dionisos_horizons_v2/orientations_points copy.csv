@@ -1,0 +1,4 @@
+X,Y,Z,azimuth,dip,polarity,formation
+90000.0,75000.0,-2267,0,0,1,Horizon_1
+90000.0,75000.0,-6341,0,0,1,Horizon_2
+90000.0,75000.0,-8779,0,0,1,Horizon_27
