@@ -231,3 +231,29 @@ for formation, adjustment in z_adjustments.items():
 final_df.to_csv(path_files + "merged_sp_reduced_more_z_ajusted.csv", index=False)
 
 final_df.describe()
+
+df_final = pd.read_csv(
+    "../../../input/BES/stratbr_grid_v3/gempy_format/merged_sp_reduced_more_z_ajusted.csv"
+)
+
+# ----------------------------------------------
+# Duplicate all rows with formation name 'bes_89', rename to SF, and add +500 to the Z column
+# read df
+df_final = pd.read_csv(
+    "../../../input/BES/stratbr_grid_v3/gempy_format/merged_sp_reduced_more_z_ajusted.csv"
+)
+
+df_sf = df_final.loc[df_final["formation"] == "bes_89"].copy()
+
+# Rename the formation name to 'SF'
+df_sf["formation"] = "TOP"
+# Add 500 to the Z column
+df_sf["Z"] += 500
+# Append the new rows to the DataFrame
+df_final = df_final.append(df_sf, ignore_index=True)
+
+# Save the DataFrame to a CSV file
+df_final.to_csv(
+    "../../../input/BES/stratbr_grid_v3/gempy_format/2_merged_sp_reduced_more_z_ajusted.csv",
+    index=False,
+)
