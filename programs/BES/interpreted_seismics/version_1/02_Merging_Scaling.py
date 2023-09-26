@@ -1,4 +1,3 @@
-import xarray as xr
 import glob
 import numpy as np
 import pandas as pd
@@ -54,7 +53,16 @@ for x_value in list_x:
 
 final_df = pd.concat(df_appended, ignore_index=True)
 
+# X, y, z to int
+final_df["X"] = final_df["X"].astype(int)
+final_df["Y"] = final_df["Y"].astype(int)
+final_df["Z"] = final_df["Z"].astype(int)
+
+
+final_df.describe()
+final_df.info()
+
 final_df.to_csv(
-    "../../../../input/BES/interpreted_seismics/version_1/sp_reduced_points.csv",
+    "../../../../input/BES/interpreted_seismics/version_1/sp_reduced_points_v7.csv",
     index=False,
 )
