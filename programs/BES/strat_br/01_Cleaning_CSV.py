@@ -9,9 +9,9 @@ from sklearn.preprocessing import MinMaxScaler
 # -----------------------------#
 # NC to DF to CSV
 # -----------------------------#
-path_file = "../../../input/BES/stratbr_grid_v3/raw/"
-path_save = "../../../input/BES/stratbr_grid_v3/processed/"
-test_path = "../../../input/BES/stratbr_grid_v3/interim/"
+path_raw = "../../../input/BES/stratbr_grid_v4/raw/"
+path_processed = "../../../input/BES/stratbr_grid_v4/processed/"
+path_interim = "../../../input/BES/stratbr_grid_v4/interim/"
 
 # ---------------------------------------------------------------------#
 # --------------------- GEMPY FORMAT ROUTINE --------------------------#
@@ -26,10 +26,10 @@ df_sf["X"] = df_sf["X"].astype(int)  # Convert float to int
 df_sf["Y"] = df_sf["Y"].astype(int)  # Convert float to int
 df_sf.describe()
 df_sf.info()
-df_sf.to_csv(path_save + "sf.csv", index=False)  # save to path_save
+df_sf.to_csv(path_processed + "sf.csv", index=False)  # save to path_processed
 
 # 89 Ma
-df_89 = pd.read_csv(path_file + "merged_estrut_89.0.csv")  # Read csv
+df_89 = pd.read_csv(path_raw + "merged_estrut_89.0.csv")  # Read csv
 # drop time and litho columns
 df_89 = df_89.drop(columns=["time", "litho"])
 # formation column with bes value
@@ -39,10 +39,10 @@ df_89["X"] = df_89["X"].astype(int)
 df_89["Y"] = df_89["Y"].astype(int)
 df_89["Z"] = df_89["Z"].astype(int)
 # save
-df_89.to_csv(path_save + "bes_89.csv", index=False)
+df_89.to_csv(path_processed + "bes_89.csv", index=False)
 
 # 99 Ma
-df_99 = pd.read_csv(path_file + "merged_estrut_99.0.csv")  # Read csv
+df_99 = pd.read_csv(path_raw + "merged_estrut_99.0.csv")  # Read csv
 # drop time and litho columns
 df_99 = df_99.drop(columns=["time", "litho"])
 # formation column with bes value
@@ -52,35 +52,40 @@ df_99["X"] = df_99["X"].astype(int)
 df_99["Y"] = df_99["Y"].astype(int)
 df_99["Z"] = df_99["Z"].astype(int)
 # Sum -3000 to Z
-df_99["Z"] = df_99["Z"] + -3000
+# df_99["Z"] = df_99["Z"] + -3000
 # save
-df_99.to_csv(path_save + "bes_99.csv", index=False)
+df_99.to_csv(path_processed + "bes_99.csv", index=False)
 
 # ---------------------------------------------------------------------#
 # Cleaning 100.0 Ma
-df_100 = pd.read_csv(path_file + "merged_estrut_100.0.csv")  # Read csv
+df_100 = pd.read_csv(path_raw + "merged_estrut_100.0.csv")  # Read csv
 # drop columns
-df_100 = df_100.drop(
-    columns=["Unnamed: 0", "Unnamed: 0.1", "time_l", "northing_l", "easting_l"]
-)
+# df_100 = df_100.drop(columns=["Unnamed: 0", "Unnamed: 0.1", "time_l", "northing_l", "easting_l"])
 # rename columns
-df_100.rename(
-    columns={"time_d": "time", "northing_d": "Y", "easting_d": "X", "estrutural": "Z"},
-    inplace=True,
-)
+# df_100.rename(
+#    columns={"time_d": "time", "northing_d": "Y", "easting_d": "X", "estrutural": "Z"},
+#    inplace=True,
+# )
 # Change Y and X column position
-df_100 = df_100[["time", "X", "Y", "Z", "litho"]]
+# df_100 = df_100[["time", "X", "Y", "Z", "litho"]]
+df_100 = df_100.drop(columns=["time", "litho"])
+df_100["X"] = df_100["X"].astype(int)
+df_100["Y"] = df_100["Y"].astype(int)
+df_100["Z"] = df_100["Z"].astype(int)
+df_100["formation"] = "bes_100"
 # save
-df_100.to_csv(path_file + "merged_estrut_100.0.csv", index=False)
+df_100.to_csv(path_processed + "merged_estrut_100.0.csv", index=False)
 
 # ---------------------------------------------------------------------#
 # For all files
 # ---------------------------------------------------------------------#
-csv_files = [file for file in os.listdir(path_file) if file.endswith(".csv")]
+csv_files = [file for file in os.listdir(path_raw) if file.endswith(".csv")]
+
+csv_files = sorted(csv_files, key=lambda x: float(x.split("_")[2].split(".")[0]))
 
 for file_name in csv_files:
     # Read the CSV file
-    df = pd.read_csv(os.path.join(path_file, file_name))
+    df = pd.read_csv(os.path.join(path_raw, file_name))
 
     # Drop 'time' and 'litho' columns
     df = df.drop(columns=["time", "litho"])
@@ -96,7 +101,7 @@ for file_name in csv_files:
 
     # Save the modified DataFrame to a new CSV file
     new_file_name = f"bes_{file_name.split('_')[2].split('.')[0]}.csv"
-    df.to_csv(os.path.join(test_path, new_file_name), index=False)
+    df.to_csv(os.path.join(path_interim, new_file_name), index=False)
 
 
 # -----------------------------#
@@ -109,12 +114,8 @@ df["formation"] = "bes_99"  # Só uma formação
 df.drop(columns=["time", "litho"], inplace=True)  # Drop time and litho columns
 
 # Scaling X and Y
-scaler_x = MinMaxScaler(
-    feature_range=(0, (df["X"].max() - df["X"].min()))
-)  # Define X scaler
-scaler_y = MinMaxScaler(
-    feature_range=(0, (df["Y"].max() - df["Y"].min()))
-)  # Define Y scaler
+scaler_x = MinMaxScaler(feature_range=(0, (df["X"].max() - df["X"].min())))  # Define X scaler
+scaler_y = MinMaxScaler(feature_range=(0, (df["Y"].max() - df["Y"].min())))  # Define Y scaler
 df[["X"]] = scaler_x.fit_transform(df[["X"]])  # Apply X scaler
 df[["Y"]] = scaler_y.fit_transform(df[["Y"]])  # Apply Y scaler
 df["X"] = df["X"].astype(int)  # Convert X to int
