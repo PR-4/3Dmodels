@@ -1,0 +1,571 @@
+ POCO           :   1BSS 0064  BS       
+                                                                                                                                     
+ IDENTIFICADOR  :   SG23N33NE17V14A                         BACIA          :   SANTOS                                                
+ CAMPO          :   CARAVELA                                DATUM          :   ARATU                                                 
+ LATITUDE       :   -26.77282 (  -26  46 22.1)              LONGITUDE      :   -46.78392 (  -46  47  2.1)                            
+ MERID.CENTRAL  :   - 45                                    COORD.UTM FUNDO:    7037440.0S  322628.0W                                
+ DISTRITO       :   E&P-SUL                                 ESTADO         :   BS                                                    
+ MUNICIPIO      :                                           CODIGO POCO    :   016379                                                
+ QUADRICULA     :   46703732                                MESA ROTATIVA  :     27.0                                                
+ B.A.P          :    -195.0                                 P.F.SONDADOR   :   5383.0                                                
+ PROF.MX.PERF.  :   5394.0                                  METROS PERF.   :   5394.0                                                
+ MAIOR PROF.    :   5394.0                                  INICIO         :   08/03/92                                              
+ TERMINO        :   01/06/92                                DATA LIB.SONDA :                                                         
+ ULT.RECLASSIF. :   31/10/92                                ULT.RECLASSIF. :   LOCACAO                                               
+ SITUACAO LOC.  :   CONCLUIDO                               DATA APROV.LOC :   31/07/91                                              
+ CADASTRO       :   01923                                   SEDOC          :   0455                                                  
+ SONDA          :   SS34                                    FORMACAO P.F.  :   F GUARUJ                                              
+ TERRA / MAR    :   MAR                                     ACS RISCO      :                                                         
+ CONTR. RISCO   :                                           DOC.APROV.LOC. :   DEPEX-T-333.065/1991                                  
+ NOME           :   BAC SANTOS SUB.64                       CLASSIFICACAO  :   PIONEIRO                                              
+ RECLASSIFICACAO:   DESCOBRIDOR DE CAMPO COM OLEO.                                                                                   
+ MC C.UTM BASE  :   - 45                                    COORD.UTM BASE :     7037440.0S    322628.0W                             
+ DADOS  LOCACAO :                                                                                                                    
+ MC LOCACAO     :   - 45                                    COORD.UTM LOC. :     7037440.0S   322628.0W                              
+ DATUM LOCACAO  :   ARATU                                   EMPR. OPER.1/2 :    PETROBRAS                                            
+ DIRECIONAL?    :   VERTICAL                                                                                                         
+ HISTORICO DA RECLASSIFICACAO -      30/06/92   -  INDEFINIDO.                                           - SITUACAO ATUAL            
+                                     31/10/92   -  DESCOBRIDOR DE CAMPO COM OLEO.                        - RECLASSIFICACAO           
+-----------------                                                               
+ REVESTIMENTOS -         TIPO           PROFUNDIDADE        DIAMETRO       IND. DE RECUPERACAO                                       
+-----------------                                                               
+                    TUBO CONDUTOR       280.0  ( -253.0)    30               NAO                                                     
+                    REV. SUPERFICIE     487.0  ( -460.0)    20               NAO                                                     
+                    REV. INTERMED.     1883.0  (-1855.8)    13 3/8           NAO                                                     
+                    REV. INTERMED.     4333.0  (-4302.8)     9 5/8           NAO                                                     
+                    LINER              5381.0  (-5350.7)     7               NAO                                                     
+-----------------------                                                         
+ UNID.VERTICALIZADAS -                                                                                                               
+-----------------------                                                         
+ TIP QL N O M E  CODIGO  TOPO / COTA     DESC. TOPO   BASE / COTA      DESC. BASE   MET TEMPO FONTE DE INTERPRETACAO       DATA      
+ L   B  F MARAMB 188013   222.0( -195.0)               827.0 ( -800.)                A        E&P SUL/GERET                22/05/1997
+ L   B  F IGUAPE 159013   827.0( -800.0)               984.0 ( -957.)                A        E&P SUL/GERET                22/05/1997
+ L   B  F MARAMB 188013   984.0( -957.0)              2830.0 (-2803.)                A        E&P SUL/GERET                08/05/1998
+ L   B  F JUREIA 211536  2830.0(-2803.0)              3744.0 (-3717.)                A        E&P SUL/GERET                08/05/1998
+ L   B  F ITAACU 215045  3744.0(-3717.0)              4626.0 (-4599.)                A        E&P SUL/GERET                08/05/1998
+ L   B  F ITANHA 235045  4626.0(-4599.0)              4768.0 (-4741.)                A        E&P SUL/GERET                22/05/1997
+ L   B  F GUARUJ 245045  4768.0(-4741.0)                                             A        E&P SUL/GERET                22/05/1997
+-------------------------------                                                 
+ INDICIOS DE HIDROCARBONETOS -                                                                                                       
+-------------------------------                                                 
+ TIPO ORIGEM AMOSTRA   T O P O           B A S E      MODO      R O C H A        %       TIPO/COR/TONALIDADE        V/M  UGT   UGP   
+  O     L      C    4772.0 (-4745.0) 4785.0 (-4758.0)      CALCARENITO          100 ESPARSA/AMARELO  /CLARO          /               
+  G     D      N    4782.0 (-4755.0) 4785.0 (-4758.0)  N                                                             /    10     2   
+  O     L      T    4785.0 (-4758.0) 4791.0 (-4764.0)  E   CALCARENITO          100 ESPARSA/AMARELO  /CLARO         I/R              
+  O     L      T    4802.0 (-4775.0) 4803.0 (-4776.0)  E   CALCARENITO          100 TOTAL  /AMARELO  /CLARO         I/R              
+  O     L      C    4803.0 (-4776.0) 4830.0 (-4803.0)      CALCARENITO          100 ESPARSA/AMARELO  /CLARO          /               
+  G     D      N    4805.0 (-4778.0) 4806.0 (-4779.0)  N                                                             /    48     7   
+  G     D      N    4818.0 (-4791.0) 4819.0 (-4792.0)  N                                                             /    22     2   
+  G     D      N    4823.0 (-4796.0) 4824.0 (-4797.0)  N                                                             /    11     2   
+  O     L      C    4884.0 (-4857.0) 4884.0 (-4857.0)      CALCARENITO          100 PONTUAL/AMARELO  /CLARO          /               
+  G     D      N    4885.0 (-4858.0) 4887.0 (-4860.0)  N                                                             /    24     3   
+  G     D      N    4890.0 (-4863.0) 4894.0 (-4867.0)  N                                                             /    62     8   
+  O     L      C    4893.0 (-4866.0) 4965.0 (-4938.0)      CALCARENITO          100 ESPARSA/AMARELO  /CLARO         I/R              
+  G     D      N    4902.0 (-4875.0) 4903.0 (-4876.0)  N                                                             /    24     3   
+  G     D      N    4906.0 (-4879.0) 4907.0 (-4880.0)  N                                                             /    18     3   
+  O     L      C    4968.0 (-4941.0) 4992.0 (-4965.0)      CALCARENITO           70 ESPARSA/AMARELO  /CLARO         M/R              
+  O     L      C    4986.0 (-4959.0) 4995.0 (-4968.0)      CALCARENITO           70 PONTUAL/AMARELO  /CLARO         M/R              
+  O     L      C    5079.0 (-5052.0) 5082.0 (-5055.0)  M   CALCARENITO           70                                 I/R              
+  G     D      N    5115.0 (-5088.0) 5121.0 (-5094.0)  N                                                             /    20     2   
+  O     L      C    5265.0 (-5238.0) 5268.0 (-5241.0)      CALCARENITO           60 PONTUAL/AMARELO  /CLARO         I/R              
+  O     L      C    5322.0 (-5295.0) 5325.0 (-5298.0)  N   CALCARENITO           80 ESPARSA/CASTANHO /AMARELADO     M/R              
+---------------                                                                 
+ TESTEMUNHOS -                                                                                                                       
+---------------                                                                 
+     TIPO DO TESTEMUNHO           NUMERO       TOPO / COTA        BASE / COTA     RECUPERADO  FLAG.EXISTENCIA      LITOTECA          
+  CONVENCIONAL (BROCA DIAMANTE )   001      4785.0 (-4754.8)   4803.5 (-4773.3)     18.50           1             CENPES             
+----------------------------------                                              
+  PERFIS: AQUISICAO/PROCESSAMENTO                                                                                                    
+----------------------------------                                              
+   COD  GR  TIPO           CIA   COR DESC    DATA           TOPO            BASE                                                     
+   ---  --  ----           ---   --- ----    ----           ----            ----                                                     
+                                                                                                                                     
+----------------------------------                                              
+  PERFIS: AQUISICAO/PROCESSAMENTO                                                                                                    
+----------------------------------                                              
+   COD  GR  TIPO           CIA   COR DESC    DATA           TOPO            BASE                                                     
+   ---  --  ----           ---   --- ----    ----           ----            ----                                                     
+   025  01  DIL/           SCHL  01    A  20/04/1992  1883.0( -1856.0) 4337.6( -4310.6)                                              
+   105  01  BHC/                       A              1883.0( -1856.0) 4328.3( -4301.3)                                              
+   165  01  GR                         A               460.0(  -433.0) 4322.9( -4295.9)                                              
+   270  02  VSP(W)                     A              3300.0( -3273.0) 4275.0( -4248.0)  (  39 NIVEIS )                              
+   040  03  DIT/           SCHL  02    A  02/06/1992  4333.0( -4306.0) 5382.0( -5355.0)                                              
+   105  03  BHC/                       B              4333.0( -4306.0) 5382.0( -5355.0)                                              
+   165  03  GR                         B              4333.0( -4306.0) 5382.0( -5355.0)                                              
+   150  04  LDL/                       A              4333.0( -4306.0) 5382.0( -5355.0)                                              
+   194  04  CNL                        A              4333.0( -4306.0) 5382.0( -5355.0)                                              
+   287  05  RFT                        A              4325.4( -4298.4) 5380.7( -5353.7)                                              
+--------------------------------------                                          
+  PERFIS: DADOS DE REFERENCIA SISMICA                                                                                                
+--------------------------------------                                          
+ NUMERO DA     TIPO DE      DESCIDA DA       PROFUNDIDADE           TEMPO                                                            
+ CORRIDA       PERFIL       FERRAMENTA          MEDIDA              SISMICO                                                          
+   01           270             A            2000.0 ( -1973.0)       921.6                                                           
+                                             3000.0 ( -2973.0)      1253.7                                                           
+                                             3300.0 ( -3273.0)      1333.6                                                           
+                                             3325.0 ( -3298.0)      1340.2                                                           
+                                             3350.0 ( -3323.0)      1347.8                                                           
+                                             3375.0 ( -3348.0)      1354.1                                                           
+                                             3400.0 ( -3373.0)      1361.7                                                           
+                                             3425.0 ( -3398.0)      1367.0                                                           
+                                             3450.0 ( -3423.0)      1373.0                                                           
+                                             3475.0 ( -3448.0)      1379.2                                                           
+                                             3500.0 ( -3473.0)      1385.2                                                           
+                                             3525.0 ( -3498.0)      1393.4                                                           
+                                             3550.0 ( -3523.0)      1398.7                                                           
+                                             3575.0 ( -3548.0)      1404.1                                                           
+                                             3600.0 ( -3573.0)      1410.1                                                           
+                                             3625.0 ( -3598.0)      1416.9                                                           
+                                             3650.0 ( -3623.0)      1422.1                                                           
+                                             3675.0 ( -3648.0)      1428.4                                                           
+                                             3700.0 ( -3673.0)      1435.7                                                           
+                                             3725.0 ( -3698.0)      1439.2                                                           
+                                                                                                                                     
+--------------------------------------                                          
+  PERFIS: DADOS DE REFERENCIA SISMICA                                                                                                
+--------------------------------------                                          
+ NUMERO DA     TIPO DE      DESCIDA DA       PROFUNDIDADE           TEMPO                                                            
+ CORRIDA       PERFIL       FERRAMENTA          MEDIDA              SISMICO                                                          
+   01              A                         3750.0 ( -3723.0)      1445.5                                                           
+                                             3775.0 ( -3748.0)      1451.9                                                           
+                                             3800.0 ( -3773.0)      1458.4                                                           
+                                             3825.0 ( -3798.0)      1463.8                                                           
+                                             3850.0 ( -3823.0)      1472.6                                                           
+                                             3875.0 ( -3848.0)      1476.6                                                           
+                                             3900.0 ( -3873.0)      1482.1                                                           
+                                             3925.0 ( -3898.0)      1489.4                                                           
+                                             3950.0 ( -3923.0)      1495.0                                                           
+                                             4000.0 ( -3973.0)      1506.5                                                           
+                                             4025.0 ( -3998.0)      1512.7                                                           
+                                             4050.0 ( -4023.0)      1520.2                                                           
+                                             4075.0 ( -4048.0)      1525.4                                                           
+                                             4100.0 ( -4073.0)      1528.6                                                           
+                                             4125.0 ( -4098.0)      1536.6                                                           
+                                             4150.0 ( -4123.0)      1543.0                                                           
+                                             4175.0 ( -4148.0)      1549.2                                                           
+                                             4200.0 ( -4173.0)      1555.3                                                           
+                                             4225.0 ( -4198.0)      1561.3                                                           
+                                             4250.0 ( -4223.0)      1567.5                                                           
+                                             4275.0 ( -4248.0)      1573.7                                                           
+---------------------------------------                                         
+  PERFIS: DADOS GERAIS DE TESTE A CABO                                                                                               
+---------------------------------------                                         
+ TIPO DE PERFIL:      287               GRUPO DE PERF. COMBINADOS:           05             TIPO DE PACKER:             AREA GRANDE  
+ NUMERO DA CORRIDA:    02               TIPO DE PROBE:          INFO NAO EXISTE             RESTRICAO ABERTURA:     4X.020"          
+ DESCIDA DA FERRAMENTA: A               TIPO REGISTRADOR:                                   COLCHAO DE AGUA:                         
+---------------------------------------------------                             
+  PERFIS: DADOS DE PRE-TESTES (TOMADAS DE PRESSAO)                                                                                   
+---------------------------------------------------                             
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9174.               NUMERO DO PRE-TESTE:                        01      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4821.5 ( -4794.5)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   7129.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8520.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9183.               NUMERO DO PRE-TESTE:                        02      
+                                                                                                                                     
+---------------------------------------------------                             
+  PERFIS: DADOS DE PRE-TESTES (TOMADAS DE PRESSAO)                                                                                   
+---------------------------------------------------                             
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4828.4 ( -4801.4)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   2068.               QUAL. DA ESTATICA:    PROXIMO DA ESTABILIZACAO      
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8573.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9313.               NUMERO DO PRE-TESTE:                        03      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4896.8 ( -4869.8)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8199.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8587.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9359.               NUMERO DO PRE-TESTE:                        04      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4912.0 ( -4885.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8433.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8466.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9382.               NUMERO DO PRE-TESTE:                        05      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4927.0 ( -4900.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8457.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8476.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9389.               NUMERO DO PRE-TESTE:                        06      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4932.7 ( -4905.7)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8455.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8480.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9394.               NUMERO DO PRE-TESTE:                        17      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4944.7 ( -4917.7)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   4571.               QUAL. DA ESTATICA:    PROXIMO DA ESTABILIZACAO      
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8479.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9414.               NUMERO DO PRE-TESTE:                        07      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4947.0 ( -4920.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8419.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8495.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9470.               NUMERO DO PRE-TESTE:                        08      
+                                                                                                                                     
+---------------------------------------------------                             
+  PERFIS: DADOS DE PRE-TESTES (TOMADAS DE PRESSAO)                                                                                   
+---------------------------------------------------                             
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4969.8 ( -4942.8)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8161.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8527.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9474.               NUMERO DO PRE-TESTE:                        09      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         4976.7 ( -4949.7)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   5770.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8536.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:                       NUMERO DO PRE-TESTE:                        10      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5026.7 ( -4999.7)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:                       QUAL. DA ESTATICA:                                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:                                                                          
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9564.               NUMERO DO PRE-TESTE:                        18      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5029.0 ( -5002.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   2128.               QUAL. DA ESTATICA:    LONGE DA ESTABILIZACAO        
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8712.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9584.               NUMERO DO PRE-TESTE:                        11      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5038.8 ( -5011.8)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   7110.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8650.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9599.               NUMERO DO PRE-TESTE:                        12      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5047.1 ( -5020.1)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   6853.               QUAL. DA ESTATICA:    PROXIMO DA ESTABILIZACAO      
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8657.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9627.               NUMERO DO PRE-TESTE:                        13      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5060.0 ( -5033.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8319.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8667.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9683.               NUMERO DO PRE-TESTE:                        14      
+                                                                                                                                     
+---------------------------------------------------                             
+  PERFIS: DADOS DE PRE-TESTES (TOMADAS DE PRESSAO)                                                                                   
+---------------------------------------------------                             
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5076.0 ( -5049.0)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8165.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8695.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:   9741.               NUMERO DO PRE-TESTE:                        15      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5107.5 ( -5080.5)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8446.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  8745.                                                                   
+ TIPO DE PERFIL:       287                PRESSAO HIDROST:  10122.               NUMERO DO PRE-TESTE:                        16      
+ NUMERO DA CORRIDA:     02                PRESSAO FLUXO-1:                       PROFUNDIDADE MEDIDA:         5313.8 ( -5286.8)      
+ GRUPO PERF.COMBINADOS: 05                PRESSAO FLUXO-2:   8765.               QUAL. DA ESTATICA:    ESTABILIZADA                  
+ DESCIDA DA FERRAMENTA:  A                PRESSAO ESTATICA:  9850.                                                                   
+-------------------------------------------------                               
+  PERFIS: DADOS DE TESTES (AMOSTRAGEM E ANALISE)                                                                                     
+-------------------------------------------------                               
+ TIPO DE PERFIL              287   NUMERO SEQUENCIAL DA CAMARA:  1     TIPO AMOSTRA:         SEGREGADA     API DO OLEO:              
+ NUMERO DA CORRIDA:           02   FLUIDO RECUPERADO:     FILTRADO     TEMPO AMOSTRAGEM:          75.0                               
+ DESCIDA FERRAMENTA:           A   NUMERO DO TESTE:             01     VOL. HC LIQUIDO:                    TEOR H2S:                 
+ PROF. DO TESTE: 4821.6( -4794.6)  CAPACIDADE DA CAMARA:    2 7 /5     TIPO HC LIQUIDO:                    TEOR MG++:                
+ % C1:                             VOL. FASE AQUOSA:                   PH                         11.0     TEOR HIDROX:              
+ % C2:                             SALINIDADE FASE AQUOSA:      41     TIPO TRACADOR:                      TEOR HIDROX+CO3:          
+ % C3:                             RESISTIVIDADE A 75.F:               SALINIDADE TRACADOR(X MIL):         DENS. FASE AQUOSA:   11.1 
+ % C4:                             TEOR CA++:                   40                                                                   
+ % C5:                                                                                                                               
+ TIPO DE PERFIL              287   NUMERO SEQUENCIAL DA CAMARA:  2     TIPO AMOSTRA:         SEGREGADA     API DO OLEO:              
+ NUMERO DA CORRIDA:           02   FLUIDO RECUPERADO:     FILTRADO     TEMPO AMOSTRAGEM:          60.0                               
+ DESCIDA FERRAMENTA:           A   NUMERO DO TESTE:             01     VOL. HC LIQUIDO:                    TEOR H2S:                 
+ PROF. DO TESTE: 4821.6( -4794.6)  CAPACIDADE DA CAMARA:    1 0 /0     TIPO HC LIQUIDO:                    TEOR MG++:                
+ % C1:                             VOL. FASE AQUOSA:                   PH                         11.0     TEOR HIDROX:              
+ % C2:                             SALINIDADE FASE AQUOSA:      41     TIPO TRACADOR:                      TEOR HIDROX+CO3:          
+ % C3:                             RESISTIVIDADE A 75.F:               SALINIDADE TRACADOR(X MIL):         DENS. FASE AQUOSA:   11.1 
+ % C4:                             TEOR CA++:                   40                                                                   
+ % C5:                                                                                                                               
+--------------------------------------------                                    
+ LITOLOGIA - *** VALORES VERTICALIZADOS ***                                                                                          
+--------------------------------------------                                    
+  TOPO              BASE                ROCHA                 COR         TONALIDADE    GRANULOMETRIA   ARREDONDAME                  
+  221.0 ( -194.0)   805.0 ( -778.0)  56 ARGILITO              CINZA       CLARO                                                      
+                    827.0 ( -800.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                    984.0 ( -957.0)   8 CALCARENITO           CREME       CLARO         GROSSEIRO                                    
+                    995.0 ( -968.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   1000.0 ( -973.0)  58 MARGA                 CINZA       CLARO                                                      
+                   1016.0 ( -989.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   1021.0 ( -994.0)  58 MARGA                 CINZA       CLARO                                                      
+                   1029.0 (-1002.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   1375.0 (-1348.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   1400.0 (-1373.0)   8 CALCARENITO           CREME       CLARO         GROSSEIRO                                    
+                   1475.0 (-1448.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   1500.0 (-1473.0)  58 MARGA                 CINZA       CLARO                                                      
+                   1985.0 (-1958.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   1993.0 (-1966.0)  54 SILTITO               CINZA       ACASTANHADO                                                
+                   2275.0 (-2248.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2304.5 (-2277.5)  58 MARGA                 CINZA       CLARO                                                      
+                   2311.0 (-2284.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2314.0 (-2287.0)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2326.0 (-2299.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2334.0 (-2307.0)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2455.0 (-2428.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2463.5 (-2436.5)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2473.0 (-2446.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2479.5 (-2452.5)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2521.0 (-2494.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2533.0 (-2506.0)  49 ARENITO               CINZA       ESBRANQUICADO MUITO FINO                                   
+                   2536.0 (-2509.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2542.0 (-2515.0)  49 ARENITO               CINZA       ESBRANQUICADO MUITO FINO                                   
+                   2544.0 (-2517.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2560.0 (-2533.0)  49 ARENITO               CINZA       ESBRANQUICADO MUITO FINO                                   
+                   2565.0 (-2538.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2570.5 (-2543.5)  49 ARENITO               CINZA       ESBRANQUICADO MUITO FINO                                   
+                   2575.5 (-2548.5)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2582.0 (-2555.0)  49 ARENITO               CINZA       ESBRANQUICADO MUITO FINO                                   
+                   2597.0 (-2570.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2600.0 (-2573.0)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2613.5 (-2586.5)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2617.0 (-2590.0)  58 MARGA                 CINZA       ESBRANQUICADO                                              
+                   2632.5 (-2605.5)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2636.0 (-2609.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   2658.0 (-2631.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2662.0 (-2635.0)  58 MARGA                 CREME                                                                  
+                   2666.0 (-2639.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2669.0 (-2642.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   2703.0 (-2676.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   2714.0 (-2687.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   2746.0 (-2719.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2749.5 (-2722.5)  58 MARGA                 CREME       ACINZENTADO                                                
+                   2830.0 (-2803.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2837.5 (-2810.5)  54 SILTITO               CINZA       CLARO                                                      
+                   2844.5 (-2817.5)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2846.5 (-2819.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2852.0 (-2825.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2855.0 (-2828.0)  54 SILTITO               CINZA       CLARO                                                      
+                   2857.0 (-2830.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2860.0 (-2833.0)  54 SILTITO               CINZA       CLARO                                                      
+                   2870.0 (-2843.0)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2882.5 (-2855.5)  54 SILTITO               CINZA       CLARO                                                      
+                   2886.5 (-2859.5)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2898.0 (-2871.0)  54 SILTITO               CINZA       CLARO                                                      
+                   2902.5 (-2875.5)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2908.0 (-2881.0)  54 SILTITO               CINZA       CLARO                                                      
+                   2910.5 (-2883.5)  49 ARENITO               CINZA       CLARO         MUITO FINO                                   
+                   2929.0 (-2902.0)  54 SILTITO               CINZA       CLARO                                                      
+                   2967.0 (-2940.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   2971.5 (-2944.5)  58 MARGA                             ESBRANQUICADO                                              
+                   3003.0 (-2976.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3014.5 (-2987.5)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3022.0 (-2995.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3031.0 (-3004.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3043.0 (-3016.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3052.5 (-3025.5)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3104.5 (-3077.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3108.0 (-3081.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3117.5 (-3090.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3123.0 (-3096.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3129.5 (-3102.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3132.0 (-3105.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3136.5 (-3109.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3142.0 (-3115.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3150.0 (-3123.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3153.0 (-3126.0)   6 CALCILUTITO           BRANCO                                                                 
+                   3160.0 (-3133.0)  58 MARGA                 CREME       ACINZENTADO                                                
+                   3167.0 (-3140.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3187.0 (-3160.0)  49 ARENITO               CINZA       ESBRANQUICADO FINO                                         
+                   3210.5 (-3183.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3215.0 (-3188.0)  54 SILTITO               CINZA       CLARO                                                      
+                   3217.0 (-3190.0)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3223.0 (-3196.0)  49 ARENITO               CINZA       ESBRANQUICADO FINO                                         
+                   3229.5 (-3202.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3234.0 (-3207.0)  49 ARENITO               CINZA       ESBRANQUICADO FINO                                         
+                   3251.5 (-3224.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3257.0 (-3230.0)  54 SILTITO               CINZA       CLARO                                                      
+                   3355.5 (-3328.5)  57 FOLHELHO              CINZA       ESCURO                                                     
+                   3414.0 (-3387.0)  54 SILTITO               CINZA       CLARO                                                      
+                   3490.0 (-3463.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3497.0 (-3470.0)  49 ARENITO               CINZA       CLARO         FINO                                         
+                   3502.5 (-3475.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3508.0 (-3481.0)  49 ARENITO               CINZA       CLARO         FINO                                         
+                   3512.0 (-3485.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3516.5 (-3489.5)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3519.5 (-3492.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3534.0 (-3507.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3538.0 (-3511.0)  57 FOLHELHO                          ESVERDEADO                                                 
+                   3554.0 (-3527.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3557.5 (-3530.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3561.5 (-3534.5)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3564.5 (-3537.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3594.0 (-3567.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3597.0 (-3570.0)   6 CALCILUTITO           BRANCO                                                                 
+                   3602.5 (-3575.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3612.5 (-3585.5)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3615.5 (-3588.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3628.0 (-3601.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3630.5 (-3603.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3646.0 (-3619.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3649.5 (-3622.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3657.0 (-3630.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3660.0 (-3633.0)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3666.0 (-3639.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3669.0 (-3642.0)   6 CALCILUTITO           BRANCO                                                                 
+                   3686.0 (-3659.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3688.0 (-3661.0)   6 CALCILUTITO           BRANCO                                                                 
+                   3732.5 (-3705.5)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   3735.5 (-3708.5)  57 FOLHELHO              CINZA       ESVERDEADO                                                 
+                   3744.0 (-3717.0)  49 ARENITO                           ESBRANQUICADO MEDIO                                        
+                   4626.0 (-4599.0)  57 FOLHELHO              CINZA       CLARO                                                      
+                   4647.5 (-4620.5)  54 SILTITO               CINZA       CLARO                                                      
+                   4649.5 (-4622.5)   6 CALCILUTITO           BRANCO                                                                 
+                   4658.5 (-4631.5)  54 SILTITO               CINZA       CLARO                                                      
+                   4663.5 (-4636.5)  58 MARGA                 CREME       CLARO                                                      
+                   4677.5 (-4650.5)  54 SILTITO               CINZA       CLARO                                                      
+                   4697.0 (-4670.0)  58 MARGA                 CREME       CLARO                                                      
+                   4713.0 (-4686.0)  54 SILTITO               CINZA       CLARO                                                      
+                   4745.0 (-4718.0)  58 MARGA                 CREME       CLARO                                                      
+                   4754.0 (-4727.0)  54 SILTITO               CINZA       CLARO                                                      
+                   4763.5 (-4736.5)  58 MARGA                 CREME       CLARO                                                      
+                   4768.0 (-4741.0)  54 SILTITO               CINZA       CLARO                                                      
+                   4787.0 (-4760.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4796.5 (-4769.5)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4807.0 (-4780.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4814.0 (-4787.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4820.5 (-4793.5)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4825.0 (-4798.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4827.0 (-4800.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4831.5 (-4804.5)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4836.5 (-4809.5)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4842.0 (-4815.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4845.0 (-4818.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4850.0 (-4823.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4858.0 (-4831.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4860.0 (-4833.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4866.0 (-4839.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4872.0 (-4845.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4895.0 (-4868.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4900.0 (-4873.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4907.0 (-4880.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4909.0 (-4882.0)   8 CALCARENITO           CREME       ESBRANQUICADO MEDIO                                        
+                   4910.5 (-4883.5)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4916.0 (-4889.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4924.5 (-4897.5)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4930.0 (-4903.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4932.0 (-4905.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4935.0 (-4908.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   4937.0 (-4910.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   4986.5 (-4959.5)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   5023.5 (-4996.5)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   5132.0 (-5105.0)   8 CALCARENITO           CREME       CLARO         MEDIO                                        
+                   5287.0 (-5260.0)   6 CALCILUTITO           CREME       ESBRANQUICADO                                              
+                   5296.0 (-5269.0)   8 CALCARENITO           CINZA       ESCURO        MEDIO                                        
+                   5300.0 (-5273.0)   6 CALCILUTITO           CINZA       ESCURO                                                     
+                   5304.0 (-5277.0)   8 CALCARENITO           CASTANHO    ESBRANQUICADO MEDIO                                        
+                   5312.0 (-5285.0)   6 CALCILUTITO           CINZA       ESCURO                                                     
+                   5394.0 (-5367.0)   8 CALCARENITO           CASTANHO    ESBRANQUICADO MEDIO                                        
+  RESUMO DAS ROCHAS ENCONTRADAS NO POCO -                                                                                            
+   6  CALCILUTITO      =   321.0 M      6.21 %                                                                                       
+   8  CALCARENITO      =   500.0 M      9.67 %                                                                                       
+  49  ARENITO          =   349.5 M      6.76 %                                                                                       
+  54  SILTITO          =   212.0 M      4.10 %                                                                                       
+  56  ARGILITO         =   584.0 M     11.29 %                                                                                       
+  57  FOLHELHO         =  2960.0 M     57.22 %                                                                                       
+  58  MARGA            =   246.5 M      4.77 %                                                                                       
+--------------------------------------                                          
+ ZONAS RESERVATORIO (DESENVOLVIMENTO)                                                                                                
+--------------------------------------                                          
+ COD. ZONA     FONTE DE INTERPRETACAO       TOPO / COTA     QL BASE / COTA     QL MET QL  TOPO / COTA      BASE / COTA      MOT.AUS. 
+ 500/GT10   A  E&P GERER/GERES              4787.5 (-4760.5)   4796.3 (-4769.3)    A  B                                              
+ 510/GT10   B  E&P GERER/GERES              4807.7 (-4780.7)   4830.9 (-4803.9)    A  B                                              
+ 520/GT10   C  E&P GERER/GERES              4845.0 (-4818.0)   4849.5 (-4822.5)    A  B                                              
+ COD. ZONA     FONTE DE INTERPRETACAO       TOPO / COTA     QL BASE / COTA     QL MET QL  TOPO / COTA      BASE / COTA      MOT.AUS. 
+ 530/GT20   A  E&P GERER/GERES              4896.1 (-4869.1)   4898.7 (-4871.7)    A  B                                              
+ 540/GT20   B  E&P GERER/GERES              4906.7 (-4879.7)   4915.9 (-4888.9)    A  B                                              
+ 550/GT20   C  E&P GERER/GERES              4918.1 (-4891.1)   4919.1 (-4892.1)    A  B                                              
+ 560/GT20   D  E&P GERER/GERES              4924.9 (-4897.9)   4935.0 (-4908.0)    A  B                                              
+ 570/GT20   E  E&P GERER/GERES              4937.0 (-4910.0)   4954.0 (-4927.0)    A  B                                              
+ 580/GT30      E&P GERER/GERES              5026.0 (-4999.0)   5131.0 (-5104.0)    A  B                                              
+ 620/GT40      E&P GERER/GERES              5312.3 (-5285.3)   5329.7 (-5302.7)    A  B                                              
+
+
+                                            ========================================
+                                                      DICIONARIO DE CODIGOS
+                                            ========================================
+
+
+
+
+                                       DICIONARIO DE UNIDADES ESTRATIGRAFICAS
+                                       ======================================
+
+ METODO DE INTERPRETACAO                                                  CODIGOS DE QUALIDADE
+
+ PERFIL                                A                                  BOM                      B
+ LITOLOGIA                             B                                  REGULAR                  R
+ SISMICA                               C                                  QUESTIONAVEL             Q
+ PALEONTOLOGIA                         D                                  INFERIDO                 I
+ PERFIL E LITOLOGIA                    E                                  DADO NAO REVISTO         X
+ PERFIL E SISMICA                      F
+ PERFIL E PALENTOLOGIA                 G
+ PALEONTOLOGIA E LITOLOGIA             H
+ PALENTOLOGIA E SISMICA                I
+ PERFIL, LITOLOGIA E PALEONTOLOGIA     J
+ PERFIL, LITOLOGIA E SISMICA           K
+ PERFIL, LITO. PALEO. E SISMICA        L
+ DADO NAO REVISTO                      X
+ INFORMACAO NAO EXISTENTE              Z
+
+
+ DICIONARIO DE TIPO DE UNIDADE
+
+ UNIDADE LITOESTRATIGRAFICA                 L
+ DISCORDANCIAS                              D
+ UNIDADE CRONOESTRATIGRAFICA                C
+ UNIDADE CRONOESTRATIGRAFICA ESPECIAL       E
+ UNIDADE CRONO-SISMICA                      S
+ MARKER (CAMADA CHAVE)                      M
+ NANOFOSSIL                                 N
+ PALINOLOGIA/CHITINOZOA/AGRITARCA           P
+ OSTRACODAS                                 O
+ FORAMINIFERO                               F
+ ZONA ESTERIL-NAO AVALIADA                  X
+ AMBIENTES DEPOSICIONAIS                    T
+ DINOFLAGELADOS                             G
+
+
+
+
+                                       DICIONARIO DE INDICIOS DE HIDROCARBONETOS
+                                       =========================================
+
+ TIPO DE INDICIO                                                ORIGEM
+
+ INDICIO DE OLEO,                      O                        LITOLOGIA                     L
+ INDICIO DE GAS                        G                        FLUIDO DE PERFURACAO          F
+ INDICIO DE CONDENSADO                 C                        DETECTOR                      D
+ IND. DE BETUME/ASFALTO/OLEO MORTO     B                        KICK                          K
+ DADO NAO REVISTO                      X                        DADO NAO REVISTO              X
+
+
+ TIPO DE AMOSTRA                                                COR
+
+ CALHA                  C                                       BRANCO              BRC       1
+ TESTEMUNHO             T                                       CREME               CRM       2
+ LATERAL                L                                       CINZA               CNZ       3
+ SUBCESTA               S                                       AMARELO             AMR       4
+ NAO SE APLICA          N                                       VERDE               VRD       5
+ DADO NAO REVISTO       X                                       VERMELHO            VRM       6
+                                                                ROXO                ROX       7
+                                                                CASTANHO            CTN       8
+                                                                PRETO               PRT       9
+                                                                VARIEGADO           VRG       0
+
+
+ MODO DE OCORRENCIA DO INDICIO de HC                            TIPO DE FLUORESCENCIA
+
+ SATURACAO              S                                       TOTAL                         T
+ SUBSATURACAO           B                                       ESPARSA                       E
+ MANCHA                 M                                       PONTUAL                       P
+ EXSUDACAO              E                                       SEM FLUORESCENCIA             S
+ ODOR                   O                                       NAO SE APLICA                 N
+ NAO SE APLICA          N                                       INF. NAO EXISTENTE            Z
+ DADO NAO REVISTO       X 
+ INF. NAO EXISTENTE     Z
+
+
+ TONALIDADE                                                     VELOCIDADE DE DISSEMINACAO CORTE
+
+ CLARO             CRL       1                                  IMEDIATO                      I
+ ESCURO            ESC       2                                  MODERADO                      M
+ ALARANJADO        ALJ       3                                  PROVOCADO                     P
+ ESBRANQUIÇADO     ESB       4                                  SEM CORTE                     S
+ ACASTANHADO       ACT       5                                  NAO SE APLICA                 N
+ ACINZENTADO       ACZ       6                                  INFORMACAO NAO EXISTENTE      Z
+ ESVERDEADO        EVD       7
+ AVERMELHADO       AVM       8
+ AMARELADO         AMR       9
+ HIALINO           HIA       0
+
+
+ MODO DE DISSEMINACAO DO CORTE
+
+ AUREOLAR                    A
+ RADIAL                      R
+ NAO SE APLICA               N
+ INFORMACAO NAO EXISTENTE    Z

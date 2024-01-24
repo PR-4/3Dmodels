@@ -1,0 +1,6 @@
+ UNIDADE      TOPO(Prof/Cota)  BASE(Prof/Cota)
+ F-MARAMB       237.0  -212.0                                                        
+ F-JUREIA      2958.0 -2932.8                                                         
+ F-ITAACU      3836.0 -3810.4                                                         
+ F-ITANHA      4641.0 -4615.2                                                         
+ F-GUARUJ      4853.0 -4827.2                                                         

@@ -1,0 +1,595 @@
+PREFIXO ANP       : 1-BRSA-635-SCS      
+=====================================
+CADASTRO ANP      : 82316023135                                                                                                                                                                                                                                
+SIGLA DO PAIS     : 1-SCS-14
+DADOS DE LOCALIZACAO GEOLOGICA
+______________________________
+BACIA             : SANTOS                                                                                                                                                                                                                                     
+CAMPO             :                                                                                                                                                                                                                                            
+AREA DE BACIA     :                                                                                                                                                                                                                                            
+BLOCO CONTRATUAL: : BM-S-12                                                                                                                                                                                                                                    
+DADOS DE LOCALIZACAO POLITICA
+_____________________________
+PAIS              : BRASIL
+UN.FEDERACAO      : SANTA CATARINA                                                                                                                                                                                                                             
+MUNICIPIO         :                                                                                                                                                                                                                                            
+NOME DA LOCACAO          1-SCS-14 [LOC BAHAMAS]                                                                                                                                                                                                                
+LOCALIZACAO PREVISTA DA BAP                                                                                                                                                                                                                                    
+   Datum                      :        ARATU-BS                                                                                                                                                                                                                
+   MC                         :   -45: 0:0.0000                                                                                                                                                                                                                
+   UTM       N Prevista Base  :                                                                                                                                                                                                                                
+   UTM       E Prevista Base  :                                                                                                                                                                                                                                
+COORD. PREVISTAS P/ O FUNDO                                                                                                                                                                                                                                    
+   Datum                      :        ARATU-BS                                                                                                                                                                                                                
+   MC                         :   -45: 0:0.0000                                                                                                                                                                                                                
+   UTM       N Prevista Fundo :       7011406.0                                                                                                                                                                                                                
+   UTM       E Prevista Fundo :        317700.0                                                                                                                                                                                                                
+COTA FINAL PREVISTA           :         -5200.0                                                                                                                                                                                                                
+PROF.FINAL MEDIDA PREVISTA    :                                                                                                                                                                                                                                
+DATA DE APROVACAO             :      09/04/2008                                                                                                                                                                                                                
+DOCUMENTO DE APROVACAO        :E-P-EXP 000131/2008                                                                                                                                                                                                             
+PREVISAO OCORRENCIA DE CO2    :                                                                                                                                                                                                                                
+PREVISAO OCORRENCIA DE H2S    :                                                                                                                                                                                                                                
+LAMINA D'AGUA PREV            :           212.0                                                                                                                                                                                                                
+QUADRO PREVISOES GEOLOGICAS   :                                                                                                                                                                                                                                
+OBSERVACOES                   :                                                                                                                                                                                                                                
+DADOS POSICIONAIS E GEOMETRICOS
+_______________________________
+LOCALIZACAO GEOGRAFICA DA BAP                                                                                                                                                                                                                                  
+   Datum                      :        ARATU-BS                                                                                                                                                                                                                
+   MC                         :   -45: 0:0.0000                                                                                                                                                                                                                
+   UTM       N Base           :       7011406.0                                                                                                                                                                                                                
+   UTM       E Base           :        317700.0                                                                                                                                                                                                                
+   Precisao                   :                                                                                                                                                                                                                                
+  COORD. GEOGRAFICA DA BAP:                                                                                                                                                                                                                                    
+    Latitude     :  -27.00713   Longitude    :  -46.83727                                                                                                                                                                                                      'n    Datum        ARATU-BS                                                                                                                                                                                                                                      
+LOCALIZACAO GEOGRAFICA DO FUNDO DO POCO                                                                                                                                                                                                                        
+   Datum                      :        ARATU-BS                                                                                                                                                                                                                
+   MC                         :   -45: 0:0.0000                                                                                                                                                                                                                
+   UTM       N Fundo Poco     :       7011405.1                                                                                                                                                                                                                
+   UTM       E Fundo Poco     :        317745.8                                                                                                                                                                                                                
+   Precisao                   :                                                                                                                                                                                                                                
+  COORD. GEOGRAFICA FUNDO                                                                                                                                                                                                                                      
+    Latitude     :  -27.00714   Longitude    :  -46.83681                                                                                                                                                                                                      
+    Datum        ARATU-BS                                                                                                                                                                                                                                      
+COTA ALTIMETRICA              :                                                                                                                                                                                                                                
+DISTANCIA A COSTA             :        190000.0                                                                                                                                                                                                                
+LAMINA D'AGUA                 :           212.0                                                                                                                                                                                                                
+PROF. FINAL PERFILAGEM        :          5230.0                                                                                                                                                                                                                
+PROF. FINAL SONDADOR          :          5230.0                                                                                                                                                                                                                
+MAIOR PROFUNDIDADE ALCANCADA  :          5230.0                                                                                                                                                                                                                
+ALTITUDE MESA ROT(SONDA REF.PROF.)         25.0                                                                                                                                                                                                                
+  COORD. GMS DA BAP:                                                                                                                                                                                                                                           
+    Latitude     :     027:00:25.668 S   Longitude    :     046:50:14.180 W                                                                                                                                                                                    
+    Datum        ARATU-BS                                                                                                                                                                                                                                      
+  COORD. GMS  FUNDO:                                                                                                                                                                                                                                           
+    Latitude     :     027:00:25.720 S   Longitude    :     046:50:12.520 W                                                                                                                                                                                    
+    Datum        ARATU-BS                                                                                                                                                                                                                                      
+ALVO ATINGIDO                 :                                                                                                                                                                                                                                
+CO2                           :                                                                                                                                                                                                                                
+H2S                           :                                                                                                                                                                                                                                
+DATA DE INICIO DO POCO        : 03/07/2008                                                                                                                                                                                                                     
+DATA DE TERMINO DO POCO       : 14/08/2008                                                                                                                                                                                                                     
+PREFIXO SONDA REF. P/ PROF.   : SS-39                                                                                                                                                                                                                          
+DETALHAMENTO DA LOCALIZACAO   :                                                                                                                                                                                                                                
+ REFERENCIA SISMICA; LINHA 1556 TRACO 2412 [3D CARBSUL]
+FINALIDADE DO POCO            :                                                                                                                                                                                                                                
+ TESTAR A PRESENCA DE HIDROCARBONETOS NOS RESERVATORIOS CARBONATICOS DA FM GUARUJA, ZONA B2 INFERIOR,
+  QUE APRESENTAM FORTE ANOMALIA DE AMPLITUDE NEGATIVA 
+HISTORICO DA MUDANCA DE COORDENADAS DO POCO
+_____________________________________________
+DATA                          : 29-SEP-09 
+DESCRICAO                     : Nome do Datum Geodesico
+VALOR ANTERIOR                : 4
+VALOR ATUAL                   : 11
+-------------------------------------------------------------------
+DATA                          : 22-SEP-08 
+DESCRICAO                     : Data de Conclus?o do Poco
+VALOR ANTERIOR                :  
+VALOR ATUAL                   : 02-SEP-08
+-------------------------------------------------------------------
+DATA                          : 16-SEP-08 
+DESCRICAO                     : Coordenada UTM Leste do Fundo
+VALOR ANTERIOR                :  
+VALOR ATUAL                   : 317745.8
+-------------------------------------------------------------------
+DATA                          : 16-SEP-08 
+DESCRICAO                     : Coordenada UTM Norte do Fundo
+VALOR ANTERIOR                :  
+VALOR ATUAL                   : 7011405.1
+-------------------------------------------------------------------
+DATA                          : 14-JUL-08 
+DESCRICAO                     : Coordenada UTM Norte da Base
+VALOR ANTERIOR                :  
+VALOR ATUAL                   : 7011406
+-------------------------------------------------------------------
+DATA                          : 14-JUL-08 
+DESCRICAO                     : Coordenada UTM Leste da Base
+VALOR ANTERIOR                :  
+VALOR ATUAL                   : 317700
+-------------------------------------------------------------------
+DATA                          : 10-APR-08 
+DESCRICAO                     : Inclus?o de Registro
+VALOR ANTERIOR                :  
+VALOR ATUAL                   :  
+-------------------------------------------------------------------
+PROPRIEDADES E RESPONSABILIDADES
+________________________________
+PROPRIETARIO                  : PETROBRAS                                                                                                                                                                                                                      
+UNIDADE DE NEGOCIOS GEOGRAFICA: UN-BS                                                                                                                                                                                                                          
+UNIDADE NEGOCIOS RESPONSAVEL  : E&P-EXP                                                                                                                                                                                                                        
+LOCACAO                       : E&P EXPLORACAO                                                                                                                                                                                                                 
+APROVACAO                     : E&P EXPLORACAO                                                                                                                                                                                                                 
+ACOMPANHAMENTO GEOLOGICO      :                                                                                                                                                                                                                                
+PERFURACAO                    :                                                                                                                                                                                                                                
+HISTORICO DA RECLASSIFICACAO
+____________________________
+  27/12/2008 SECO COM INDICIOS DE GAS
+HISTORICO DO STATUS DO POCO
+___________________________
+  09/04/2008, 14:30:00 Locacao aprovada E-P-EXP 000131/2008
+ EM REUNIAO REALIZADA NA CIDADE DO GUARUJA, EM 27/03/2008, O COMEXP APROVOU A LOCACAO 1-SCS-14 [LOC 
+  03/07/2008, 17:00:00 Poco perfurando  
+  14/08/2008, 16:00:00 Poco concluido aguardando reclassificacao  
+  27/12/2008, 12:00:00 Poco concluido  
+  NUMERO         : 0                                                                                                                
+  INICIO         : 03/07/2008, 17:00:00                                                                                             
+  TERMINO        : 14/08/2008, 16:00:00                                                                                             
+  NUM. SIDETRACK ORIGEM:                PROF. DE ORIGEM       :                                                                     
+  PROF. FINAL SONDADOR : 5230.00                                                                                                    
+  COORD. GEOGRAFICA FUNDO SIDETRACK:                                                                                                
+    Latitude     :  -27.00714   Longitude    :  -46.83681                                                                           
+  COORD. UTM         DO FUNDO DO SIDETRACK:                                                                                         
+    UTM        Norte: 7011405.1 UTM        Leste:  317745.8          Meridiano    : -45.00000   Precisao     :                      
+____________________________
+  SONDAS UTILIZADAS NO POCO:
+____________________________
+  PREFIXO DA SONDA     : SS-39                                                                                                      
+  INICIO VINCULO       : 20/06/2008                                                                                                 
+  TERMINO VINCULO      :                                                                                                            
+  ALTITUDE MESA ROT.   :    25.0                                                                                                    
+  DATA DE LIBERACAO    :                                                                                                            
+  OPERADORA DA EPOCA   : QUEIROZ GALVAO                                                                                             
+  DIAMETRO DO RISER    :                                                                                                            
+ _______________________________________________________
+ UNIDADES LITOESTRATIGRAFICAS - Profundidades MEDIDAS
+ _______________________________________________________
+ Q UNIDADE      TOPO(Prof/Cota) Q BASE(Prof/Cota) Q  MET. INTERP  DATA INTERP FONTE INTERPRETACAO   COMENTARIO
+ B F MARAMB       237.0  -212.0 D                    NAO REVISTO  23/09/2008  UN-EXP/SOP/AGAPT                                      
+ B F JUREIA      2958.0 -2932.8                      NAO REVISTO  23/09/2008  UN-EXP/SOP/AGAPT                                      
+ B F ITAACU      3836.0 -3810.4                      NAO REVISTO  23/09/2008  UN-EXP/SOP/AGAPT                                      
+ B F ITANHA      4641.0 -4615.2                      NAO REVISTO  23/09/2008  UN-EXP/SOP/AGAPT                                      
+ B F GUARUJ      4853.0 -4827.2                      NAO REVISTO  23/09/2008  UN-EXP/SOP/AGAPT                                      
+ _____________________________________
+ TEMPERATURA EXTRAPOLADA EM PERFILAGEM                                                                                              
+ _____________________________________                                                                                              
+ N.PERF.  TEMP. EXTRAPOLADA    PROF. GRAFICO      METODO DE EXTRAPOLACAO                                                            
+  3          314.4               5205.00          DADO NAO ARQUIVADO                                                                
+ _______________________
+ PERFILAGEM DADOS GERAIS
+ _______________________
+  NUMERO PERFILAGEM           :    01        PROF. ALCANCADA:    2010.00 (-1984.97  )             PROF. DA SAPATA: 2000.0(-1974.97)                   
+  NUMERO SIDETRACK            :    00        PRF.ALARG.DIAM.:                                     N.ORDEM SERVICO:                                    
+  OBSERVADOR                  :    JOSIANE                                                                                                            
+  OCORRENCIA                  :                                                                                                                       
+ PERFILAGEM LWD FASE 17 1/2"
+  NUMERO CONDICIONAMENTO      :    01        DENSIDADE               :                              PH                  :                             
+  PERCENTAGEM DE OLEO         :              SALINIDADE DA LAMA      :                              VISCOS. LAMA (MARSH):                             
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : AGUA DO MAR                                                                                                           
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    01        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  2010.0 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    07/07/2008, 23:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    04/07/2008, 20:00:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    08/07/2008, 11:30:00                                                                                               
+  TEMPO CIRCULACAO            :    070:55    DATA/HORA FIM CIRCUL.  :          07/07/2008, 23:00:00                                                   
+ _______________________
+ PERFILAGEM DADOS GERAIS
+ _______________________
+  NUMERO PERFILAGEM           :    02        PROF. ALCANCADA:    4588.70 (-4562.91  )             PROF. DA SAPATA: 2000.0(-1974.97)                   
+  NUMERO SIDETRACK            :    00        PRF.ALARG.DIAM.:                                     N.ORDEM SERVICO:                                    
+  OBSERVADOR                  :    JOSIANE/GHIZI/CAIO                                                                                                 
+  OCORRENCIA                  :                                                                                                                       
+ PERFILAGEM LWD FASE 12 1/4"
+  NUMERO CONDICIONAMENTO      :    01        DENSIDADE               :      9.6 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :    95550 mg/l                VISCOS. LAMA (MARSH): 150s                        
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    01        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  2572.6 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    16/07/2008, 20:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    15/07/2008, 13:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    17/07/2008, 02:00:00                                                                                               
+  TEMPO CIRCULACAO            :    025:00    DATA/HORA FIM CIRCUL.  :          16/07/2008, 20:00:00                                                   
+  NUMERO CONDICIONAMENTO      :    02        DENSIDADE               :      9.5 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :    95550 mg/l                VISCOS. LAMA (MARSH): 110s                        
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    02        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  2704.6 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    19/07/2008, 06:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    17/07/2008, 23:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    19/07/2008, 10:00:00                                                                                               
+  TEMPO CIRCULACAO            :    023:30    DATA/HORA FIM CIRCUL.  :          19/07/2008, 06:00:00                                                   
+  NUMERO CONDICIONAMENTO      :    03        DENSIDADE               :     10.1 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :   113046 mg/l                VISCOS. LAMA (MARSH): 95s                         
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    03        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  3233.6 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    24/07/2008, 23:59:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    19/07/2008, 13:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :                                                                                                                       
+  TEMPO CIRCULACAO            :    120:59    DATA/HORA FIM CIRCUL.  :          24/07/2008, 23:59:00                                                   
+  NUMERO CONDICIONAMENTO      :    04        DENSIDADE               :     10.4 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :   141697 mg/l                VISCOS. LAMA (MARSH): 86s                         
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    04        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  3754.8 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    30/07/2008, 23:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    25/07/2008, 09:15:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    31/07/2008, 07:30:00                                                                                               
+  TEMPO CIRCULACAO            :    124:00    DATA/HORA FIM CIRCUL.  :          30/07/2008, 23:00:00                                                   
+  NUMERO CONDICIONAMENTO      :    05        DENSIDADE               :     10.5 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :   137870 mg/l                VISCOS. LAMA (MARSH): 75s                         
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    05        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  4189.8 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    05/08/2008, 22:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    31/07/2008, 10:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    06/08/2008, 03:45:00                                                                                               
+  TEMPO CIRCULACAO            :    122:30    DATA/HORA FIM CIRCUL.  :          05/08/2008, 22:00:00                                                   
+  NUMERO CONDICIONAMENTO      :    06        DENSIDADE               :     10.6 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :   213251 mg/l                VISCOS. LAMA (MARSH): 73s                         
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO EXISTENTE                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    06        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    SCHLUMBERGER                                                   PROF. FUNDO POCO:  4588.7 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    09/08/2008, 13:30:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    06/08/2008, 07:00:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    10/08/2008, 00:30:00                                                                                               
+  TEMPO CIRCULACAO            :    070:45    DATA/HORA FIM CIRCUL.  :          09/08/2008, 13:30:00                                                   
+ _______________________
+ PERFILAGEM DADOS GERAIS
+ _______________________
+  NUMERO PERFILAGEM           :    03        PROF. ALCANCADA:    5230.00 (-5204.18  )             PROF. DA SAPATA: 2000.0(-1974.97)                   
+  NUMERO SIDETRACK            :    00        PRF.ALARG.DIAM.:                                     N.ORDEM SERVICO:                                    
+  OBSERVADOR                  :    CAIO/RAMIR                                                                                                         
+  OCORRENCIA                  :                                                                                                                       
+ PERFILAGEM CABO FINAL.
+  NUMERO CONDICIONAMENTO      :    01        DENSIDADE               :     11.8 lb/gal              PH                  :                             
+  PERCENTAGEM DE OLEO         :    60        SALINIDADE DA LAMA      :   311072 mg/l                VISCOS. LAMA (MARSH): 95s                         
+  RESISTIVIDADE DA LAMA       :              TEMPERATURA DA LAMA     :                              TIPO ADENSANTE      : BARITINA                    
+  RESISTIVIDADE DO FILTRADO   :              TEMPERATURA DO FILTRADO :                              PERDA FILTRADO      :                             
+  RESISTIVIDADE DO REBOCO     :              TEMPERATURA DO REBOCO   :                                                                                
+  CONCENTRACAO DO TRACADOR    :              TIPO DO TRACADOR        :  DADO NAO ARQUIVADO                                                            
+  FLUIDO                      : SINTETICO (BR-MUL,BR-MI)                                                                                              
+  COMENTARIO                  :                                                                                                                       
+ GRUPO DE PERFIS COMBINADOS
+ __________________________
+  GRUPO DE PERFIS COMBINADOS  :    01        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:                                   
+  DATA/HORA CHEGADA FUNDO POCO:                                                                                                                       
+  DATA/HORA INICIO DESCIDA    :    15/08/2008, 16:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    16/08/2008, 02:30:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    02        TEMP. FUNDO MAR/BAP    :                             TEMP. FUNDO POCO:  310.0 F                          
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  5226.3 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    16/08/2008, 07:45:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    16/08/2008, 04:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    16/08/2008, 16:30:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    03        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:                                   
+  DATA/HORA CHEGADA FUNDO POCO:                                                                                                                       
+  DATA/HORA INICIO DESCIDA    :    16/08/2008, 09:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    17/08/2008, 02:00:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    04        TEMP. FUNDO MAR/BAP    :                             TEMP. FUNDO POCO:  320.0 F                          
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  5220.0 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    17/08/2008, 06:00:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    17/08/2008, 03:15:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    17/08/2008, 13:45:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    05        TEMP. FUNDO MAR/BAP    :                                                                                 
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  4600.0 m                         
+  DATA/HORA CHEGADA FUNDO POCO:                                                                                                                       
+  DATA/HORA INICIO DESCIDA    :    17/08/2008, 16:00:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    17/08/2008, 22:30:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    06        TEMP. FUNDO MAR/BAP    :                             TEMP. FUNDO POCO:  300.0 F                          
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  4340.0 m                         
+  DATA/HORA CHEGADA FUNDO POCO:                                                                                                                       
+  DATA/HORA INICIO DESCIDA    :    18/08/2008, 01:00:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    18/08/2008, 12:30:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    07        TEMP. FUNDO MAR/BAP    :                             TEMP. FUNDO POCO:  325.0 F                          
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  5229.0 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    18/08/2008, 19:10:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    18/08/2008, 15:45:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    19/08/2008, 23:30:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+  GRUPO DE PERFIS COMBINADOS  :    08        TEMP. FUNDO MAR/BAP    :                             TEMP. FUNDO POCO:  300.0 F                          
+  EMPRESA                     :    BAKER ATLAS                                                    PROF. FUNDO POCO:  5225.8 m                         
+  DATA/HORA CHEGADA FUNDO POCO:    20/08/2008, 09:15:00                                                                                               
+  DATA/HORA INICIO DESCIDA    :    20/08/2008, 06:30:00                                                                                               
+  DATA/HORA FINAL  DESCIDA    :    20/08/2008, 16:45:00                                                                                               
+  TEMPO CIRCULACAO            :    003:30    DATA/HORA FIM CIRCUL.  :          14/08/2008, 02:00:00                                                   
+ _______________________
+ UNIDADES DE PERFILAGEM 
+ _______________________
+  NUMERO            GRUPO PERF.         COMPANHIA DE                        TIPO UNIDADE            VERSAO DO                                         
+  CORRIDA           COMBINADOS          PERFILAGEM                          DE PERFILAGEM           SOFTWARE                                          
+    01                   01             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   01             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   02             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   03             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   04             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   05             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    02                   06             SCHLUMBERGER                        DADO NAO EXISTENTE                                                        
+    03                   01             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   02             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   03             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   04             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   05             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   06             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   07             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+    03                   08             BAKER ATLAS                         DADO NAO ARQUIVADO                                                        
+ ___________________________    
+   AQUISICAO/PROCESSAMENTO    
+ ___________________________    
+ COD GR TIPO     CIA                              COR DESC  DATA       TOPO                BASE               NIVEIS         AMOSTRAS         TESTE       PRE-TESTES         SIDETRACK
+ ___ __ ____     ___                              ___ ____  ____       ____                ____               ______         ________         _____       __________         _________
+ 165 01 GR       SCHLUMBERGER                     01    A   04/07/2008  300.00( -275.00)   2010.00(-1984.97)                                                                 00       
+ 394 01 ARC      SCHLUMBERGER                     01    A   04/07/2008  300.00( -275.00)   2010.00(-1984.97)                                                                 00       
+ 165 01 GR       SCHLUMBERGER                     02    B   15/07/2008 2000.00(-1974.97)   2572.59(-2547.54)                                                                 00       
+ 394 01 ARC      SCHLUMBERGER                     02    B   15/07/2008 2000.00(-1974.97)   2572.59(-2547.54)                                                                 00       
+ 165 02 GR       SCHLUMBERGER                     02    C   17/07/2008 2572.60(-2547.55)   2704.60(-2679.54)                                                                 00       
+ 394 02 ARC      SCHLUMBERGER                     02    C   17/07/2008 2572.60(-2547.55)   2704.60(-2679.54)                                                                 00       
+ 165 03 GR       SCHLUMBERGER                     02    D   19/07/2008 2704.60(-2679.54)   3233.60(-3208.22)                                                                 00       
+ 394 03 ARC      SCHLUMBERGER                     02    D   19/07/2008 2704.60(-2679.54)   3233.60(-3208.22)                                                                 00       
+ 165 04 GR       SCHLUMBERGER                     02    E   25/07/2008 3233.60(-3208.22)   3754.80(-3729.19)                                                                 00       
+ 394 04 ARC      SCHLUMBERGER                     02    E   25/07/2008 3233.60(-3208.22)   3754.80(-3729.19)                                                                 00       
+ 165 05 GR       SCHLUMBERGER                     02    F   31/07/2008 3754.80(-3729.19)   4189.80(-4164.03)                                                                 00       
+ 394 05 ARC      SCHLUMBERGER                     02    F   31/07/2008 3754.80(-3729.19)   4189.80(-4164.03)                                                                 00       
+ 165 06 GR       SCHLUMBERGER                     02    G   06/08/2008 4189.80(-4164.03)   4588.70(-4562.91)                                                                 00       
+ 394 06 ARC      SCHLUMBERGER                     02    G   06/08/2008 4189.80(-4164.03)   4588.70(-4562.91)                                                                 00       
+ 045 02 HDIL\    BAKER ATLAS                      03    A   16/08/2008 2000.00(-1974.97)   5226.30(-5200.48)                                                                 00       
+ 134 02 XMAC\    BAKER ATLAS                      03    A   16/08/2008 2000.00(-1974.97)   5216.60(-5190.78)                                                                 00       
+ 165 02 GR       BAKER ATLAS                      03    H   16/08/2008 2000.00(-1974.97)   5205.80(-5179.98)                                                                 00       
+ 331 04 MREX     BAKER ATLAS                      03    A   17/08/2008 4815.00(-4789.20)   5220.00(-5194.18)                                                                 00       
+ 331 05 MREX     BAKER ATLAS                      03    B   17/08/2008 4400.00(-4374.21)   4600.00(-4574.21)                                                                 00       
+ 156 06 ZDL      BAKER ATLAS                      03    A   18/08/2008 2000.00(-1974.97)   4340.00(-4314.22)                                                                 00       
+ 246 07 VLS      BAKER ATLAS                      03    A   18/08/2008  240.00( -215.00)   5229.00(-5203.18)  ( 21 NIVEIS  )                                                 00       
+ 156 08 ZDL      BAKER ATLAS                      03    B   20/08/2008 2000.00(-1974.97)   5225.80(-5199.98)                                                                 00       
+ _______________________________    
+   DADOS DE REFERENCIA SISMICA    
+ _______________________________    
+                 TIPO DE DESCIDA DA      PROFUNDIDADE            TEMPO                                                                                                    
+ CORRIDA         PERFIL  FERRAMENTA      MEDIDA                  SISMICO                                                                                                  
+ 03              246          A           240.00 ( -215.00)       136.00                                                                                                  
+ _____________________________________
+ TEMPERATURA EXTRAPOLADA EM PERFILAGEM                                                                                              
+ _____________________________________                                                                                              
+ N.PERF.  TEMP. EXTRAPOLADA    PROF. GRAFICO      METODO DE EXTRAPOLACAO                                                            
+  3          314.4               5205.00          DADO NAO ARQUIVADO                                                                
+ ________________________________________    
+   DADOS DE TEMPOS PERDIDOS EM PERFILAGEM    
+ ________________________________________    
+PERF./GRPC   TEMPO(min.) TIPO                                    COMENTARIO                                                                 
+   01/02     00000990    PROBLEMAS NO POCO                                                                                                  
+SD  TOPO              BASE                    FLUIDO                                       CONTEUDO  MANOBRA? CONEXAO?
+__  ____              ____                    ______                                       ________ ________ ________
+00  4485.00(-4459.21)   4488.00(-4462.21)    GAS PESADO                                         6       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    METANO                                            87       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    ETANO                                              7       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    PROPANO                                            4       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    GAS TOTAL                                         45       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    ISO-BUTANO                                         1       N        N                  
+00  4485.00(-4459.21)   4488.00(-4462.21)    N-BUTANO                                           1       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    GAS PESADO                                         9       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    ETANO                                              8       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    N-BUTANO                                           1       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    ISO-BUTANO                                         1       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    GAS TOTAL                                         69       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    PROPANO                                            4       N        N                  
+00  4545.00(-4519.21)   4557.00(-4531.21)    METANO                                            86       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    GAS PESADO                                         3       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    ISO-BUTANO                                         1       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    GAS TOTAL                                         32       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    PROPANO                                            2       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    N-BUTANO                                           1       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    ETANO                                              6       N        N                  
+00  5020.00(-4994.19)   5024.00(-4998.19)    METANO                                            90       N        N                  
+ __________________________    
+ Sigla:    1SCS 0014  SC
+ __________________________      
+ ______________________
+ LITOLOGIA INTERPRETADA 
+ ______________________
+  TOPO  /  COTA     BASE  /  COTA       ROCHA               COR                 TONALIDADE     GRANULOMETRIA  ARREDONDAMENTO        
+  237.40/( -212.40)  645.20/( -620.19)  ARGILA                                                                                      
+  645.20/( -620.19) 1191.60/(-1166.59)  FOLHELHO                                                                                    
+ 1191.60/(-1166.59) 1195.60/(-1170.59)  CALCILUTITO                                                                                 
+ 1195.60/(-1170.59) 1197.40/(-1172.39)  FOLHELHO                                                                                    
+ 1197.40/(-1172.39) 1206.00/(-1180.99)  CALCILUTITO                                                                                 
+ 1206.00/(-1180.99) 2371.20/(-2346.16)  FOLHELHO                                                                                    
+ 2371.20/(-2346.16) 2372.60/(-2347.56)  CALCILUTITO         CINZA               ESBRANQUICADO                                       
+ 2372.60/(-2347.56) 2382.20/(-2357.16)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2382.20/(-2357.16) 2384.40/(-2359.36)  CALCILUTITO         CINZA               ESBRANQUICADO                                       
+ 2384.40/(-2359.36) 2406.80/(-2381.76)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2406.80/(-2381.76) 2408.60/(-2383.56)  CALCILUTITO         CINZA               ESBRANQUICADO                                       
+ 2408.60/(-2383.56) 2479.00/(-2453.96)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2479.00/(-2453.96) 2485.60/(-2460.56)  ARENITO             CINZA               ESBRANQUICADO  FINO           SUBANGULAR            
+ 2485.60/(-2460.56) 2490.80/(-2465.76)  FOLHELHO            CINZA               ESCURO                                              
+ 2490.80/(-2465.76) 2515.40/(-2490.35)  ARENITO             CINZA               ESBRANQUICADO  FINO           SUBANGULAR            
+ 2515.40/(-2490.35) 2531.80/(-2506.75)  FOLHELHO            CINZA               ESCURO                                              
+ 2531.80/(-2506.75) 2612.20/(-2587.15)  FOLHELHO            CINZA               ESCURO                                              
+ 2612.20/(-2587.15) 2619.60/(-2594.55)  ARENITO                                 HIALINO        MUITO FINO     SUBARREDONDADO        
+ 2619.60/(-2594.55) 2623.40/(-2598.35)  CALCILUTITO         BRANCO                                                                  
+ 2623.40/(-2598.35) 2645.80/(-2620.75)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2645.80/(-2620.75) 2647.40/(-2622.35)  CALCILUTITO         BRANCO                                                                  
+ 2647.40/(-2622.35) 2658.80/(-2633.74)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2658.80/(-2633.74) 2660.40/(-2635.34)  CALCILUTITO         BRANCO                                                                  
+ 2660.40/(-2635.34) 2663.40/(-2638.34)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2663.40/(-2638.34) 2664.80/(-2639.74)  CALCILUTITO         BRANCO                                                                  
+ 2664.80/(-2639.74) 2684.40/(-2659.34)  ARENITO             BRANCO                             MEDIO          SUBARREDONDADO        
+ 2684.40/(-2659.34) 2711.40/(-2686.34)  FOLHELHO            CINZA               ESVERDEADO                                          
+ 2711.40/(-2686.34) 2713.40/(-2688.34)  CALCILUTITO         CREME               CLARO                                               
+ 2713.40/(-2688.34) 2734.80/(-2709.74)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 2734.80/(-2709.74) 2768.60/(-2743.52)  FOLHELHO            CASTANHO            CLARO                                               
+ 2768.60/(-2743.52) 2770.00/(-2744.92)  ARENITO                                 HIALINO        MUITO FINO     SUBANGULAR            
+ 2770.00/(-2744.92) 2815.80/(-2790.69)  FOLHELHO            CASTANHO            CLARO                                               
+ 2815.80/(-2790.69) 2832.80/(-2807.69)  SILTITO             CASTANHO                                                                
+ 2832.80/(-2807.69) 2861.60/(-2836.47)  FOLHELHO            CASTANHO            CLARO                                               
+ 2861.60/(-2836.47) 2868.40/(-2843.27)  SILTITO             CASTANHO            ESBRANQUICADO                                       
+ 2868.40/(-2843.27) 2877.00/(-2851.86)  FOLHELHO            CASTANHO            ESCURO                                              
+ 2877.00/(-2851.86) 2880.80/(-2855.66)  SILTITO             CASTANHO            ESBRANQUICADO                                       
+ 2880.80/(-2855.66) 2914.20/(-2889.05)  FOLHELHO            CASTANHO            ESCURO                                              
+ 2914.20/(-2889.05) 2918.00/(-2892.85)  SILTITO             CASTANHO            CLARO                                               
+ 2918.00/(-2892.85) 2958.00/(-2932.83)  FOLHELHO            CASTANHO                                                                
+ 2958.00/(-2932.83) 2963.80/(-2938.63)  SILTITO             CINZA               CLARO                                               
+ 2963.80/(-2938.63) 2997.80/(-2972.61)  FOLHELHO            CASTANHO            ACINZENTADO                                         
+ 2997.80/(-2972.61) 3010.60/(-2985.40)  SILTITO             CINZA               CLARO                                               
+ 3010.60/(-2985.40) 3018.40/(-2993.19)  ARENITO             CINZA               ESBRANQUICADO  FINO           SUBARREDONDADO        
+ 3018.40/(-2993.19) 3034.00/(-3008.79)  ARENITO             CINZA               CLARO          MUITO FINO     ARREDONDADO           
+ 3034.00/(-3008.79) 3047.40/(-3022.18)  FOLHELHO            CINZA               ESCURO                                              
+ 3047.40/(-3022.18) 3052.00/(-3026.78)  SILTITO             CINZA                                                                   
+ 3052.00/(-3026.78) 3084.00/(-3058.75)  FOLHELHO            CINZA               ESCURO                                              
+ 3084.00/(-3058.75) 3087.40/(-3062.15)  ARENITO             CINZA               CLARO          MUITO FINO     ARREDONDADO           
+ 3087.40/(-3062.15) 3098.40/(-3073.14)  FOLHELHO            CINZA               CLARO                                               
+ 3098.40/(-3073.14) 3247.60/(-3222.21)  SILTITO             CINZA               CLARO                                               
+ 3247.60/(-3222.21) 3251.40/(-3226.00)  FOLHELHO            CINZA               CLARO                                               
+ 3251.40/(-3226.00) 3256.20/(-3230.80)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3256.20/(-3230.80) 3262.40/(-3237.00)  SILTITO             CINZA               CLARO                                               
+ 3262.40/(-3237.00) 3266.20/(-3240.79)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3266.20/(-3240.79) 3274.20/(-3248.79)  SILTITO             CINZA               CLARO                                               
+ 3274.20/(-3248.79) 3301.40/(-3275.97)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3301.40/(-3275.97) 3315.00/(-3289.57)  SILTITO             CINZA               CLARO                                               
+ 3315.00/(-3289.57) 3315.60/(-3290.17)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3315.60/(-3290.17) 3318.00/(-3292.56)  FOLHELHO            CINZA                                                                   
+ 3318.00/(-3292.56) 3341.60/(-3316.15)  SILTITO             CINZA               ACASTANHADO                                         
+ 3341.60/(-3316.15) 3353.40/(-3327.95)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3353.40/(-3327.95) 3369.20/(-3343.74)  SILTITO             CINZA               ACASTANHADO                                         
+ 3369.20/(-3343.74) 3370.40/(-3344.94)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3370.40/(-3344.94) 3378.40/(-3352.94)  SILTITO             CINZA               ACASTANHADO                                         
+ 3378.40/(-3352.94) 3379.80/(-3354.34)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3379.80/(-3354.34) 3392.80/(-3367.33)  SILTITO             CINZA               ACASTANHADO                                         
+ 3392.80/(-3367.33) 3394.00/(-3368.53)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3394.00/(-3368.53) 3404.20/(-3378.73)  SILTITO             CINZA               ACASTANHADO                                         
+ 3404.20/(-3378.73) 3405.80/(-3380.33)  CALCILUTITO         CREME               CLARO                                               
+ 3405.80/(-3380.33) 3447.60/(-3422.12)  SILTITO             CINZA               ACASTANHADO                                         
+ 3447.60/(-3422.12) 3463.40/(-3437.91)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3463.40/(-3437.91) 3502.00/(-3476.49)  SILTITO             CINZA                                                                   
+ 3502.00/(-3476.49) 3505.20/(-3479.69)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3505.20/(-3479.69) 3511.20/(-3485.69)  SILTITO             CINZA                                                                   
+ 3511.20/(-3485.69) 3519.00/(-3493.49)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3519.00/(-3493.49) 3521.00/(-3495.49)  FOLHELHO            CINZA               ESCURO                                              
+ 3521.00/(-3495.49) 3539.40/(-3513.88)  SILTITO             CINZA                                                                   
+ 3539.40/(-3513.88) 3558.80/(-3533.28)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3558.80/(-3533.28) 3571.60/(-3546.07)  SILTITO             CINZA                                                                   
+ 3571.60/(-3546.07) 3590.20/(-3564.66)  FOLHELHO            CINZA               ESCURO                                              
+ 3590.20/(-3564.66) 3596.00/(-3570.46)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3596.00/(-3570.46) 3623.20/(-3597.65)  SILTITO             CINZA               ACASTANHADO                                         
+ 3623.20/(-3597.65) 3625.60/(-3600.05)  ARENITO             CINZA               CLARO          MUITO FINO     SUBARREDONDADO        
+ 3625.60/(-3600.05) 3682.00/(-3656.42)  SILTITO             CINZA                                                                   
+ 3682.00/(-3656.42) 3702.00/(-3676.41)  ARENITO             BRANCO                             FINO           SUBANGULAR            
+ 3702.00/(-3676.41) 3705.40/(-3679.81)  DIAMICTITO          CASTANHO            AVERMELHADO                                         
+ 3705.40/(-3679.81) 3734.40/(-3708.80)  ARENITO             BRANCO                             MEDIO          SUBANGULAR            
+ 3734.40/(-3708.80) 3739.60/(-3714.00)  DIAMICTITO          CASTANHO            AVERMELHADO                                         
+ 3739.60/(-3714.00) 3745.80/(-3720.19)  ARENITO             BRANCO                             MEDIO          SUBANGULAR            
+ 3745.80/(-3720.19) 3750.80/(-3725.19)  DIAMICTITO          CASTANHO            AVERMELHADO                                         
+ 3750.80/(-3725.19) 3775.80/(-3750.18)  ARENITO             CINZA               ESVERDEADO     MEDIO          SUBANGULAR            
+ 3775.80/(-3750.18) 3781.80/(-3756.17)  DIAMICTITO          VERDE               CLARO                                               
+ 3781.80/(-3756.17) 3809.60/(-3783.96)  ARENITO             CINZA               ESBRANQUICADO  MEDIO          SUBANGULAR            
+ 3809.60/(-3783.96) 3826.20/(-3800.55)  FOLHELHO            CINZA                                                                   
+ 3826.20/(-3800.55) 3835.00/(-3809.35)  SILTITO             CINZA                                                                   
+ 3835.00/(-3809.35) 3858.40/(-3832.74)  ARENITO             CINZA               ESBRANQUICADO  MUITO FINO     SUBARREDONDADO        
+ 3858.40/(-3832.74) 3891.60/(-3865.92)  SILTITO             CINZA               CLARO                                               
+ 3891.60/(-3865.92) 4460.20/(-4434.41)  FOLHELHO            CINZA               ESCURO                                              
+ 4460.20/(-4434.41) 4468.80/(-4443.01)  SILTITO             CINZA               ACASTANHADO                                         
+ 4468.80/(-4443.01) 4488.00/(-4462.21)  FOLHELHO            CINZA               ESCURO                                              
+ 4488.00/(-4462.21) 4524.60/(-4498.81)  SILTITO             CINZA               CLARO                                               
+ 4524.60/(-4498.81) 4528.80/(-4503.01)  CALCILUTITO         CREME               CLARO                                               
+ 4528.80/(-4503.01) 4586.60/(-4560.81)  FOLHELHO            CINZA               ESCURO                                              
+ 4586.60/(-4560.81) 4592.00/(-4566.21)  SILTITO             CINZA               CLARO                                               
+ 4592.00/(-4566.21) 4599.20/(-4573.41)  FOLHELHO            CINZA               ESCURO                                              
+ 4599.20/(-4573.41) 4604.20/(-4578.41)  SILTITO             CINZA               CLARO                                               
+ 4604.20/(-4578.41) 4756.00/(-4730.20)  FOLHELHO            CINZA               ESCURO                                              
+ 4756.00/(-4730.20) 4845.60/(-4819.80)  MARGA               CINZA               CLARO                                               
+ 4845.60/(-4819.80) 4852.20/(-4826.40)  CALCILUTITO         CINZA               ESBRANQUICADO                                       
+ 4852.20/(-4826.40) 5228.40/(-5202.58)  CALCARENITO         CASTANHO            ESCURO         FINO           SUBARREDONDADO        
+ ____________________________                                                                                                       
+ DIAMETROS DAS FASES DO POCO                                                                                                        
+ ____________________________                                                                                                       
+ PROF./COTA          DIAMETRO                                                                                                       
+   300.00( -275.00)   36                                                                                                            
+  2010.00(-1984.97)   17 1/2                                                                                                        
+  4604.00(-4578.21)   12 1/4                                                                                                        
+  5230.00(-5204.18)   8 1/2                                                                                                         
+ _____________________                                                                                                              
+ DADOS DE TAMPONAMENTO                                                                                                              
+ _____________________                                                                                                              
+ TIPO      TOPO                BASE                                                                                                 
+ ABANDONO   440.00 ( -414.99)   510.00 ( -484.99)                                                                                   
+ ABANDONO  1900.00 (-1874.98)  2030.00 (-2004.97)                                                                                   
+ ABANDONO  2400.00 (-2374.96)  2650.00 (-2624.95)                                                                                   
+ ABANDONO  2650.00 (-2624.95)  2900.00 (-2874.86)                                                                                   
+ ABANDONO  2900.00 (-2874.86)  3165.00 (-3139.68)                                                                                   
+ ABANDONO  3140.00 (-3114.71)  3390.00 (-3364.54)                                                                                   
+ ABANDONO  3390.00 (-3364.54)  3650.00 (-3624.44)                                                                                   
+ ABANDONO  3650.00 (-3624.44)  3900.00 (-3874.31)                                                                                   
+ ABANDONO  4400.00 (-4374.21)  4670.00 (-4644.20)                                                                                   
+ ABANDONO  4670.00 (-4644.20)  4950.00 (-4924.19)                                                                                   
+ ABANDONO  4950.00 (-4924.19)  5230.00 (-5204.18)                                                                                   
+ ____________________                                                                                                               
+    REVESTIMENTOS                                                                                                                   
+ ____________________                                                                                                               
+ TIPO                PROFUNDIDADE        DIAMETRO           INDICADOR RECUPERACAO                                                   
+ REVESTIMENTO         300.00 ( -275.00)  30                                                                                         
+ REVESTIMENTO        2000.00 (-1974.97)  13 3/8                                                                                     
+   ____________________                                                                                                                                                                                                                                        
