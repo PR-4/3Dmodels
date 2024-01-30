@@ -1,0 +1,7 @@
+,surface,series,order_surfaces,isBasement,isFault,isActive,hasData,color,vertices,edges,sfai,id
+0,h0,Sea_floor,1,False,False,True,True,#015482,,,,1
+1,h1,Strat_1,1,False,False,True,True,#9f0052,,,,2
+2,h2,Strat_2,1,False,False,True,True,#ffbe00,,,,3
+3,h3,Strat_3,1,False,False,True,True,#728f02,,,,4
+4,h4,Strat_4,1,False,False,True,True,#443988,,,,5
+5,basement,Basement,1,True,False,True,False,#ff3f20,,,,6

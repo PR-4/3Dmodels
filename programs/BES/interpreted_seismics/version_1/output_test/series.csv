@@ -1,0 +1,7 @@
+order_series,series,BottomRelation,isActive,isFault,isFinite
+1,Sea_floor,Erosion,False,False,False
+2,Strat_1,Erosion,True,False,False
+3,Strat_2,Erosion,True,False,False
+4,Strat_3,Erosion,True,False,False
+5,Strat_4,Erosion,True,False,False
+6,Basement,Erosion,True,False,False
