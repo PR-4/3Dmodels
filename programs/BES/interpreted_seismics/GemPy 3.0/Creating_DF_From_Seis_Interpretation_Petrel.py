@@ -51,7 +51,7 @@ def criar_df(caminho_arquivo, nome_formacao):
     df = df.drop(columns=["A", "B", "C", "D", "LINHA"])
 
     # adicionar coluna com um nome
-    df["formacao"] = nome_formacao
+    df["formation"] = nome_formacao
 
     # multiplicar a coluna Z por -1
     df["Z"] = df["Z"].astype(float) * -1
@@ -115,6 +115,33 @@ print(df_final.describe())
 # df_final.to_csv(dir_save + "df_seis_gempy_format.csv", index=False)
 
 # ------------------------------------------------------------#
+# Selecionar região de interesse para grid
+# ------------------------------------------------------------#
+
+
+def filter_by_range(df, x_range, y_range):
+    """
+    Filter a DataFrame based on a range of X and Y values.
+
+    Parameters:
+    df (pd.DataFrame): The DataFrame to filter.
+    x_range (tuple): A tuple specifying the minimum and maximum X values.
+    y_range (tuple): A tuple specifying the minimum and maximum Y values.
+
+    Returns:
+    df (pd.DataFrame): The filtered DataFrame.
+    """
+    df = df[(df["X"] >= x_range[0]) & (df["X"] <= x_range[1])]
+    df = df[(df["Y"] >= y_range[0]) & (df["Y"] <= y_range[1])]
+    df.reset_index(drop=True, inplace=True)
+    return df
+
+
+# Or after concatenating all DataFrames
+df_final = filter_by_range(df_final, (420000, 460000), (7770000.0, 7789833.0))
+
+
+# ------------------------------------------------------------#
 # Dar rescale nas coordenadas
 # ------------------------------------------------------------#
 from sklearn.preprocessing import MinMaxScaler
@@ -174,14 +201,14 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
         # Arredondar os valores de X para o múltiplo de n_pontos mais próximo
         df["X_rounded"] = (df["X"] // n_pontos) * n_pontos
         # Remover os pontos duplicados com base na formação e no valor arredondado de X, mantendo apenas o primeiro ponto de cada grupo
-        df_reduzido = df.drop_duplicates(subset=["formacao", "X_rounded"], keep="first")
+        df_reduzido = df.drop_duplicates(subset=["formation", "X_rounded"], keep="first")
         # Remover a coluna X_rounded
         df_reduzido = df_reduzido.drop(columns=["X_rounded"])
     elif eixo.lower() == "y":
         # Arredondar os valores de Y para o múltiplo de n_pontos mais próximo
         df["Y_rounded"] = (df["Y"] // n_pontos) * n_pontos
         # Remover os pontos duplicados com base na formação e no valor arredondado de Y, mantendo apenas o primeiro ponto de cada grupo
-        df_reduzido = df.drop_duplicates(subset=["formacao", "Y_rounded"], keep="first")
+        df_reduzido = df.drop_duplicates(subset=["formation", "Y_rounded"], keep="first")
         # Remover a coluna Y_rounded
         df_reduzido = df_reduzido.drop(columns=["Y_rounded"])
     elif eixo.lower() == "xy":
@@ -189,7 +216,7 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
         df["X_rounded"] = (df["X"] // n_pontos) * n_pontos
         df["Y_rounded"] = (df["Y"] // n_pontos) * n_pontos
         # Remover os pontos duplicados com base na formação e nos valores arredondados de X e Y, mantendo apenas o primeiro ponto de cada grupo
-        df_reduzido = df.drop_duplicates(subset=["formacao", "X_rounded", "Y_rounded"], keep="first")
+        df_reduzido = df.drop_duplicates(subset=["formation", "X_rounded", "Y_rounded"], keep="first")
         # Remover as colunas X_rounded e Y_rounded
         df_reduzido = df_reduzido.drop(columns=["X_rounded", "Y_rounded"])
     else:
@@ -204,3 +231,89 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
 
 # Chamar a função reduzir_pontos para reduzir o número de pontos no DataFrame df_final a cada 1000 metros nas coordenadas X e Y
 df_reduzido = reduzir_pontos(df_final, "xy", 1000)
+df_reduzido.describe()
+df_reduzido["Y"].min()
+df_reduzido["Y"].max()
+df_reduzido["X"].min()
+df_reduzido["X"].max()
+
+df_reduzido.to_csv(dir_save + "df_seis_gempy_format.csv", index=False)
+
+
+# ------------------------------------------------------------#
+# Criar pontos de orientação
+# ------------------------------------------------------------#
+
+
+def criar_pontos_de_orientacao(df, formacoes, pontos_de_orientacao):
+    """
+    Cria um DataFrame com pontos de orientação para cada formação.
+
+    Parâmetros:
+    df (pandas.DataFrame): DataFrame contendo os dados das formações.
+    formacoes (list): Lista de formações únicas.
+    pontos_de_orientacao (int): Número de pontos de orientação para criar para cada formação. Deve ser 1, 2, 3, 4 ou 5.
+
+    Retorna:
+    df_orientations (pandas.DataFrame): DataFrame contendo os pontos de orientação para cada formação.
+    """
+    df_orientations = pd.DataFrame()
+
+    for formacao in formacoes:
+        df_formacao = df[df["formation"] == formacao].sort_values("Z")
+        if pontos_de_orientacao == 1:
+            indices = [len(df_formacao) // 2]  # ponto médio
+        elif pontos_de_orientacao == 2:
+            indices = [
+                (len(df_formacao) // 2 + 1) // 2,  # metade do ponto médio para o segundo ponto
+                (len(df_formacao) // 2 + len(df_formacao) - 3) // 2,  # metade do ponto médio para o penúltimo ponto
+            ]
+        elif pontos_de_orientacao == 3:
+            indices = [
+                1,  # segundo ponto
+                len(df_formacao) - 3,  # penúltimo ponto
+                len(df_formacao) // 2,  # ponto médio
+            ]
+        elif pontos_de_orientacao == 4:
+            indices = [
+                1,  # segundo ponto
+                len(df_formacao) - 3,  # penúltimo ponto
+                (len(df_formacao) // 2 + 1) // 2,  # metade do ponto médio para o segundo ponto
+                (len(df_formacao) // 2 + len(df_formacao) - 3) // 2,  # metade do ponto médio para o penúltimo ponto
+            ]
+        elif pontos_de_orientacao == 5:
+            indices = [
+                1,  # segundo ponto
+                len(df_formacao) - 3,  # penúltimo ponto
+                len(df_formacao) // 2,  # ponto médio
+                (len(df_formacao) // 2 + 1) // 2,  # metade do ponto médio para o segundo ponto
+                (len(df_formacao) // 2 + len(df_formacao) - 3) // 2,  # metade do ponto médio para o penúltimo ponto
+            ]
+        else:
+            raise ValueError("pontos_de_orientacao deve ser 1, 2, 3, 4 ou 5")
+
+        df_orientations = pd.concat([df_orientations, df_formacao.iloc[indices]])
+
+    df_orientations["azimuth"] = 0
+    df_orientations["dip"] = 0
+    df_orientations["polarity"] = 1
+
+    # Reordenar as colunas
+    df_orientations = df_orientations[["X", "Y", "Z", "azimuth", "dip", "polarity", "formation"]]
+
+    df_orientations.reset_index(drop=True, inplace=True)
+
+    return df_orientations
+
+
+# Rodar função para criar pontos de orientação
+formacoes = df_reduzido["formation"].unique()
+df_orientations = criar_pontos_de_orientacao(df_reduzido, formacoes, pontos_de_orientacao=5)
+df_orientations.info()
+
+# Salvar o DF em .csv
+df_orientations.to_csv(dir_save + "orientation_points.csv", index=False)
+"""
+formations = ['h1', 'h2', 'h3']
+df_orientations = create_orientation_points(df, formations, orienpoints=5)
+"""
