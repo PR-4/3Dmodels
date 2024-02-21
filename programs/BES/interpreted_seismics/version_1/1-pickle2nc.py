@@ -129,7 +129,6 @@ extent_df.to_csv(os.path.join(output_dir, "extent.csv"), index=False)
 
 # Extract elevation
 z_rg = geo_model.grid.regular_grid.z[::-1]
-layer_count = z_rg.size
 
 # Extract x and y coordinates
 x_rg = geo_model.grid.regular_grid.x
@@ -140,7 +139,7 @@ mask_topo = np.empty((resolution[0][0], resolution[0][1], 0), dtype=bool)
 
 out.createDimension("nx", x_rg.size)
 out.createDimension("ny", y_rg.size)
-out.createDimension("nz", layer_count)
+out.createDimension("nz", z_rg.size)
 
 try:
     # Topography grid -----
