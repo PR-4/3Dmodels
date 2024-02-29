@@ -76,11 +76,13 @@ dfs = []
 for filename in sorted(os.listdir(dir_path)):
     # Obter o caminho completo para o arquivo
     file_path = os.path.join(dir_path, filename)
-    # Criar o DataFrame e adicioná-lo à lista
-    df = criar_df(file_path)
-    # Remover os números e o hífen do início do nome da formação
-    df["formation"] = df["formation"].replace(r"^\d+-", "", regex=True)
-    dfs.append(df)
+    # Verificar se o caminho é para um arquivo e não para um diretório
+    if os.path.isfile(file_path):
+        # Criar o DataFrame e adicioná-lo à lista
+        df = criar_df(file_path)
+        # Remover os números e o hífen do início do nome da formação
+        df["formation"] = df["formation"].replace(r"^\d+-", "", regex=True)
+        dfs.append(df)
 
 # Concatenar todos os DataFrames
 df_final = pd.concat(dfs)
@@ -88,8 +90,7 @@ print(df_final)
 # print(df_final.describe())
 
 # Save DF full
-path_save = "../../../input/BES/interpreted_seismics_2/gempy_format/"
-df_final.to_csv(path_save + "surface_points_full.csv", index=False)
+df_final.to_csv(dir_save + "surface_points_full.csv", index=False)
 
 # ------------------------------------------------------------#
 # Reduzir o número de pontos para cada formação
@@ -142,7 +143,7 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
 
 
 # Chamar a função reduzir_pontos para reduzir o número de pontos no DataFrame df_final a cada 1000 metros nas coordenadas X e Y
-valor_reduzido = 100
+valor_reduzido = 1500
 df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido)
 df_reduzido.describe()
 df_reduzido["Y"].min()
@@ -153,7 +154,55 @@ df_reduzido["X"].max()
 df_reduzido["formation"].unique()
 
 # Salvar o DataFrame reduzido em um arquivo .csv
-path_save = "../../../input/BES/interpreted_seismics_2/gempy_format/"
+path_save = "../../../input/BES/interpreted_seismics_2/interim/"
 valor_red_str = str(valor_reduzido)
 f_name = "surface_points_" + valor_red_str + "m.csv"
 df_reduzido.to_csv(path_save + f_name, index=False)
+
+
+# ------------------------------------------------------------#
+# Dar rescale nas coordenadas
+# ------------------------------------------------------------#
+from sklearn.preprocessing import MinMaxScaler
+
+
+def escalar_coordenadas(df):
+    """
+    Função para escalar as coordenadas X e Y de um DataFrame.
+
+    Parâmetros:
+    df (pandas.DataFrame): DataFrame contendo as coordenadas X e Y.
+
+    Retorna:
+    df (pandas.DataFrame): DataFrame com as coordenadas X e Y escaladas.
+    """
+    # Definir o escalonador para X com o intervalo de 0 até a diferença entre o máximo e o mínimo de X
+    scaler_x = MinMaxScaler(feature_range=(0, (df["X"].max() - df["X"].min())))
+
+    # Definir o escalonador para Y com o intervalo de 0 até a diferença entre o máximo e o mínimo de Y
+    scaler_y = MinMaxScaler(feature_range=(0, (df["Y"].max() - df["Y"].min())))
+
+    # Aplicar o escalonador em X
+    df[["X"]] = scaler_x.fit_transform(df[["X"]])
+
+    # Aplicar o escalonador em Y
+    df[["Y"]] = scaler_y.fit_transform(df[["Y"]])
+
+    # Imprimir as estatísticas descritivas do DataFrame
+    print("\n", df.describe())
+
+    return df
+
+
+# Chamar a função escalar_coordenadas para escalar as coordenadas X e Y do DataFrame df_final
+df_rescaled = escalar_coordenadas(df_reduzido)
+
+df_rescaled.describe()
+df_rescaled["Y"].min()
+df_rescaled["Y"].max()
+df_rescaled["X"].min()
+df_rescaled["X"].max()
+
+# Salvar o DataFrame reduzido em um arquivo .csv
+path_save = "../../../input/BES/interpreted_seismics_2/interim/"
+df_rescaled.to_csv(path_save + "surface_points_" + valor_red_str + "m_rescaled.csv", index=False)
