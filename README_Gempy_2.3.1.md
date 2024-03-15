@@ -2,26 +2,19 @@
 3D Geomodelling with Gempy
 
 # Dependencies:
-* Gempy - 2.2.11 (Windows)
-* Gempy - 2.2.10 (Linux)
+* Gempy - 2.3.1 (Windows)
 * Anaconda - https://www.anaconda.com
 
+YLM:
+gempy_2.3.1_older_windows.yml
+gempy_2.3.1_windows.yml
+
 # How to install on Windows:
-- Create a new enviroment using gempy_windows.yml;
-    - conda env create -f gempy_windows.yml
-
-# How to install on Linux: 
-- conda env create --name gempy
-- conda activate gempy
-- pip install python==3.7.11
-- pip install gempy==2.2.10
-- conda install gdal
-- pip install pyvista==0.34.2
-- pip install jupyter
-
-# How to install on Linux with .yml
-- Create a new enviroment using gempy_linux.yml
-    - conda env create -f gempy_linux.yml
+- Create a new enviroment:
+    - conda env create --name gempy python=3.10
+    - conda install -c conda-forge aesara
+    - pip install gempy
+    - pip install notebook
 
 # Versioning
 

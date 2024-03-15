@@ -1,4 +1,4 @@
-name: gempy
+name: gempy_221
 channels:
   - conda-forge
   - defaults
