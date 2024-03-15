@@ -1,0 +1,15 @@
+surface,series,order_surfaces,isBasement,isFault,isActive,hasData,color,sfai,id
+TOP,Strat_Series,1,False,False,True,True,#015482,0.08350064617064773,1
+bes_89,Strat_Series,2,False,False,True,True,#9f0052,0.08284299862242347,2
+bes_90,Strat_Series,3,False,False,True,True,#ffbe00,0.0821941814040329,3
+bes_91,Strat_Series,4,False,False,True,True,#728f02,0.08158034813450346,4
+bes_92,Strat_Series,5,False,False,True,True,#443988,0.08100149894153907,5
+bes_93,Strat_Series,6,False,False,True,True,#ff3f20,0.08045733286468357,6
+bes_94,Strat_Series,7,False,False,True,True,#5DA629,0.07994765414000737,7
+bes_95,Strat_Series,8,False,False,True,True,#4878d0,0.07947204274172218,8
+bes_96,Strat_Series,9,False,False,True,True,#ee854a,0.07903006653272193,9
+bes_97,Strat_Series,10,False,False,True,True,#6acc64,0.07862117111061634,10
+bes_98,Strat_Series,11,False,False,True,True,#d65f5f,0.07824464717042715,11
+bes_99,Strat_Series,12,False,False,True,True,#956cb4,0.07789981106553409,12
+bes_100,Strat_Series,13,False,False,True,True,#8c613c,0.07759126000418853,13
+basement,Basement_series,1,True,False,True,False,#dc7ec0,,14

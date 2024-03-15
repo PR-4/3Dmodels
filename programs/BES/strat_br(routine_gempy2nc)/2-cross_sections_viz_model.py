@@ -5,13 +5,18 @@ import xarray as xr
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
 
-path = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/pickle_model/"
-path_model = os.path.join(path, "BES-model")
-path_save_fig = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/figures/"
+model = "StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54.nc"
+model_n = os.path.splitext(model)[0]
+path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/"
+fn_results = model_n + "_results"
+path_output = os.path.join(path_model, fn_results)
+path_figs = os.path.join(path_output, "figs")
+if not os.path.exists(path_figs):
+    os.makedirs(path_figs)
 
 # Model extent
-path_results = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/pickle_model/output/"
-path_extent = os.path.join(path_results, "extent.csv")
+path_csv_results = os.path.join(path_output, "csv_results")
+path_extent = os.path.join(path_csv_results, "extent.csv")
 extent = pd.read_csv(path_extent)
 
 xmin = extent.xmin[0]
@@ -22,18 +27,18 @@ zmin = extent.zmin.min()
 zmax = extent.zmax.max()
 
 # Get cell spacing
-path_spacing = os.path.join(path_results, "spacing.csv")
+path_spacing = os.path.join(path_csv_results, "spacing.csv")
 spacing = pd.read_csv(path_spacing)
 dx = spacing.x[0]
 dy = spacing.y[0]
 
 # Read data from netCDF file
-path_nc = os.path.join(path, "BES-model.nc")
+path_nc = os.path.join(path_output, model)
 spatial_data = xr.open_dataset(path_nc)
 
 # Grid data
-x = spatial_data["easting"][:].data
-y = spatial_data["northing"][:].data
+x = spatial_data["lon"][:].data
+y = spatial_data["lat"][:].data
 z = spatial_data["depth"][:].data
 
 # Unit IDs
@@ -42,12 +47,12 @@ surface = np.round(spatial_data["lith_block"][:].data)
 nrow, ncol, nlay = surface.shape
 
 # Further model information
-path_series = os.path.join(path_results, "series.csv")
+path_series = os.path.join(path_csv_results, "series.csv")
 series = pd.read_csv(path_series)
 # series = series[series.series != "Basement_series"]
 
 # Surface points from surfaces
-path_surf = os.path.join(path_results, "surfaces.csv")
+path_surf = os.path.join(path_csv_results, "surfaces.csv")
 surfpoints = pd.read_csv(path_surf)
 # surfpoints = surfpoints[surfpoints.surface != "basement"]
 
@@ -97,6 +102,14 @@ ax.set_title("Cross-section, top-to-bottom, depth: " + str(z[20]), pad=10, fonts
 plt.tight_layout()
 plt.show()"""
 
+path_figs_y = os.path.join(path_figs, "cross_section_y")
+path_figs_x = os.path.join(path_figs, "cross_section_x")
+path_figs_z = os.path.join(path_figs, "cross_section_z")
+
+for path in [path_figs, path_figs_y, path_figs_x, path_figs_z]:
+    if not os.path.exists(path):
+        os.makedirs(path)
+
 # Cross-sections Y
 for idx, ypos in enumerate(y):
     # Create meshgrid
@@ -120,7 +133,7 @@ for idx, ypos in enumerate(y):
 
     ax.set_title("Cross-section, west-to-east, row no.: " + str(idx) + ", northing: " + str(ypos), pad=10, fontsize=20)
 
-    figname = os.path.join(path_save_fig, "cross_section_y", "cs_y_column-" + str(idx) + ".png")
+    figname = os.path.join(path_figs_y, "cs_y_column-" + str(idx) + ".png")
     fig.savefig(figname, bbox_inches="tight", dpi=300)
 
     fig.clf()
@@ -149,7 +162,7 @@ for idx, xpos in enumerate(x):
 
     ax.set_title("Cross-section, south-to-north, row no.: " + str(idx) + ", easting: " + str(xpos), pad=10, fontsize=20)
 
-    figname = os.path.join(path_save_fig, "cross_section_x", "cs_x_row-" + str(idx) + ".png")
+    figname = os.path.join(path_figs_x, "cs_x_row-" + str(idx) + ".png")
     fig.savefig(figname, bbox_inches="tight", dpi=300)
 
     fig.clf()
@@ -171,7 +184,7 @@ for idx, zpos in enumerate(z):
 
     ax.set_title("Cross-section, top-to-bottom, depth: " + str(zpos), pad=10, fontsize=20)
 
-    figname = os.path.join(path_save_fig, "cross_section_z", "cs_z_depth-" + str(idx) + ".png")
+    figname = os.path.join(path_figs_z, "cs_z_depth-" + str(idx) + ".png")
     fig.savefig(figname, bbox_inches="tight", dpi=300)
 
     fig.clf()
@@ -181,7 +194,7 @@ for idx, zpos in enumerate(z):
 
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
-# ------------------------------------------------------------------------------
+# Visualizando o modelo por diferentes métodos
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
 
@@ -191,9 +204,9 @@ import pyvista as pv
 import pyvistaqt as pvqt
 import gempy as gp
 
-path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/pickle_model/1-geo_model_higher_res.pkl"
+model_pkl = "StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54.pkl"
 # Loading the model
-geo_model = gp.load_model_pickle(path_model)
+geo_model = gp.load_model_pickle(path_model + model_pkl)
 
 p = gp.plot_3d(geo_model, plotter_type="background", show_data=False, show_lith=False, ve=5)
 
@@ -202,7 +215,10 @@ p = gp.plot_3d(geo_model, plotter_type="background", show_data=False, show_lith=
 import pandas as pd
 import os
 
-path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/pickle_model/output/triangulated_surfaces/"
+surface_path = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54_results/csv_results/"
+path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54_results/triangulated_surfaces/"
+surfaces_color = pd.read_csv(os.path.join(surface_path, "surfaces.csv"))
+colors = surfaces_color.color.values[:-1]
 
 p = pvqt.BackgroundPlotter()
 
@@ -217,7 +233,7 @@ for i in range(13):  # assuming you have files from 0 to 12
 
     # Compute the Delaunay surface and add it to the plotter
     qh_surf = qh_points.delaunay_2d()
-    p.add_mesh(qh_surf)
+    p.add_mesh(qh_surf, color=colors[i])
 
 p.set_scale(zscale=5)
 
@@ -228,7 +244,10 @@ import os
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
 
-path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/pickle_model/output/triangulated_surfaces/"
+surface_path = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54_results/csv_results/"
+path_model = "../../../output/BES/StartBR/novos_testes/gempy_2.3.1/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54_results/triangulated_surfaces/"
+surfaces_color = pd.read_csv(os.path.join(surface_path, "surfaces.csv"))
+colors = surfaces_color.color.values[:-1]
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection="3d")
@@ -241,6 +260,6 @@ for i in range(13):  # assuming you have files from 0 to 12
 
     # Plot the surface
     x, y, z = vertices.T
-    ax.plot_trisurf(x, y, z, triangles=edges, alpha=0.5)
+    ax.plot_trisurf(x, y, z, triangles=edges, color=colors[i])
 
 plt.show()

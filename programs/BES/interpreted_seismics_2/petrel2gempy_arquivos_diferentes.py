@@ -73,8 +73,11 @@ def criar_df(caminho_arquivo, skip_rows=None, neg=True):
 # Caminho para o diretório com os arquivos
 dir_path = "../../../input/BES/interpreted_seismics_2/raw/"
 
+# Caminho para salvar o arquivo intermediario em .csv
+dir_interim = "../../../input/BES/interpreted_seismics_2/interim/"
+
 # Caminho para salvar o arquivo final em .csv
-dir_save = "../../../input/BES/interpreted_seismics_2/interim/"
+dir_processed = "../../../input/BES/interpreted_seismics_2/processed/"
 
 # Lista para armazenar os DataFrames
 dfs = []
@@ -97,14 +100,46 @@ print(df_final)
 # print(df_final.describe())
 
 # Save DF full
-df_final.to_csv(dir_save + "surface_points_full.csv", index=False)
+df_final.to_csv(dir_interim + "sp_full.csv", index=False)
+
+# ------------------------------------------------------------#
+# Função pra scale
+# ------------------------------------------------------------#
+
+
+def escalar_coordenadas(df):
+    from sklearn.preprocessing import MinMaxScaler
+
+    """
+    Função para escalar as coordenadas X e Y de um DataFrame.
+
+    Parâmetros:
+    df (pandas.DataFrame): DataFrame contendo as coordenadas X e Y.
+
+    Retorna:
+    df (pandas.DataFrame): DataFrame com as coordenadas X e Y escaladas.
+    """
+    # Definir o escalonador para X com o intervalo de 0 até a diferença entre o máximo e o mínimo de X
+    scaler_x = MinMaxScaler(feature_range=(0, (df["X"].max() - df["X"].min())))
+
+    # Definir o escalonador para Y com o intervalo de 0 até a diferença entre o máximo e o mínimo de Y
+    scaler_y = MinMaxScaler(feature_range=(0, (df["Y"].max() - df["Y"].min())))
+
+    # Aplicar o escalonador em X
+    df[["X"]] = scaler_x.fit_transform(df[["X"]])
+
+    # Aplicar o escalonador em Y
+    df[["Y"]] = scaler_y.fit_transform(df[["Y"]])
+
+    return df
+
 
 # ------------------------------------------------------------#
 # Reduzir o número de pontos para cada formação
 # ------------------------------------------------------------#
 
 
-def reduzir_pontos(df, eixo, n_pontos=1000):
+def reduzir_pontos(df, eixo, n_pontos=1000, scale=False):
     """
     Função para reduzir o número de pontos em um DataFrame a cada N metros nas coordenadas X, Y ou ambas.
 
@@ -116,6 +151,11 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
     Retorna:
     df_reduzido (pandas.DataFrame): DataFrame contendo os pontos após a redução.
     """
+    df = df.copy()
+
+    if scale:
+        df = escalar_coordenadas(df)
+
     # Verificar qual eixo foi escolhido
     if eixo.lower() == "x":
         # Arredondar os valores de X para o múltiplo de n_pontos mais próximo
@@ -150,150 +190,89 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
 
 
 # Chamar a função reduzir_pontos para reduzir o número de pontos no DataFrame df_final a cada 1000 metros nas coordenadas X e Y
-valor_reduzido = 1000
-df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido)
-df_reduzido.describe()
-df_reduzido["Y"].min()
-df_reduzido["Y"].max()
-df_reduzido["X"].min()
-df_reduzido["X"].max()
-df_reduzido["Z"].min()
-df_reduzido["Z"].max()
+valor_reduzido = 500
+scaled = False
+scaled_str = "scaled" if scaled else "not_scaled"
+print(scaled_str)  # Saída: "scaled"
+df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido, scale=scaled)
+print(df_reduzido["Y"].min(), df_reduzido["Y"].max())
+print(df_reduzido["X"].min(), df_reduzido["X"].max())
+print(df_reduzido["Z"].min(), df_reduzido["Z"].max())
+print("")
 print(df_reduzido)
-
-df_reduzido["formation"].unique()
+print("")
+print(df_reduzido["formation"].unique())
 
 # Salvar o DataFrame reduzido em um arquivo .csv
-path_save = "../../../input/BES/interpreted_seismics_2/interim/"
 valor_red_str = str(valor_reduzido)
-f_name = "surface_points_" + valor_red_str + "m.csv"
-df_reduzido.to_csv(path_save + f_name, index=False)
+f_name = "sp_" + valor_red_str + "m" + "_" + scaled_str + ".csv"
+df_reduzido.to_csv(dir_processed + f_name, index=False)
+
+# ------------------------------------------------------------#
+# Criando orientation points
+# ------------------------------------------------------------#
+
+
+def get_first_point(df, formation):
+    first_point = df[df["formation"] == formation][["X", "Y", "Z"]].iloc[0]
+    return first_point
+
+
+def create_orientation(df, formations):
+    # Initialize an empty list to store the data
+    data = []
+
+    # Loop over the formations
+    for formation in formations:
+        # Get the first point of the formation
+        first_point = get_first_point(df, formation)
+
+        # Append the data to the list
+        data.append(
+            {
+                "X": first_point["X"],
+                "Y": first_point["Y"].round(2),
+                "Z": first_point["Z"].round(2),
+                "azimuth": 0,
+                "dip": 0,
+                "polarity": 1,
+                "formation": formation,
+            }
+        )
+
+    # Create the DataFrame
+    df_orientation = pd.DataFrame(data)
+
+    return df_orientation
+
+
+# Usage
+formations = ["top"]
+# formations = df_reduzido["formation"].unique()
+df_orientation = create_orientation(df_reduzido, formations)
+formations_str = "_".join(formations)
+op_fn = "op_" + formations_str + "_" + valor_red_str + "m" + "_" + scaled_str + ".csv"
+df_orientation.to_csv(dir_processed + op_fn, index=False)
 
 
 # ------------------------------------------------------------#
-# Dar rescale nas coordenadas
+# Diminuir profundidade de camadas (caso tenha overlap)
 # ------------------------------------------------------------#
-from sklearn.preprocessing import MinMaxScaler
 
 
-def escalar_coordenadas(df):
-    """
-    Função para escalar as coordenadas X e Y de um DataFrame.
-
-    Parâmetros:
-    df (pandas.DataFrame): DataFrame contendo as coordenadas X e Y.
-
-    Retorna:
-    df (pandas.DataFrame): DataFrame com as coordenadas X e Y escaladas.
-    """
-    # Definir o escalonador para X com o intervalo de 0 até a diferença entre o máximo e o mínimo de X
-    scaler_x = MinMaxScaler(feature_range=(0, (df["X"].max() - df["X"].min())))
-
-    # Definir o escalonador para Y com o intervalo de 0 até a diferença entre o máximo e o mínimo de Y
-    scaler_y = MinMaxScaler(feature_range=(0, (df["Y"].max() - df["Y"].min())))
-
-    # Aplicar o escalonador em X
-    df[["X"]] = scaler_x.fit_transform(df[["X"]])
-
-    # Aplicar o escalonador em Y
-    df[["Y"]] = scaler_y.fit_transform(df[["Y"]])
-
-    # Imprimir as estatísticas descritivas do DataFrame
-    print("\n", df.describe())
-
+def adjust_z(df, valor):
+    df = df.copy()
+    formations = df["formation"].unique()
+    for i, formation in enumerate(formations):
+        if i > 0:  # Começa da segunda formação
+            df.loc[df["formation"] == formation, "Z"] -= i * valor
     return df
 
 
-# Chamar a função escalar_coordenadas para escalar as coordenadas X e Y do DataFrame df_final
-df_rescaled = escalar_coordenadas(df_reduzido)
-
-df_rescaled.describe()
-df_rescaled["Y"].min()
-df_rescaled["Y"].max()
-df_rescaled["X"].min()
-df_rescaled["X"].max()
-
-# Salvar o DataFrame reduzido em um arquivo .csv
-path_save = "../../../input/BES/interpreted_seismics_2/interim/"
-df_rescaled.to_csv(path_save + "surface_points_" + valor_red_str + "m_rescaled.csv", index=False)
-
-
-# ------------------------------------------------------------#
-# Calcular centro
-# ------------------------------------------------------------#
-
-
-def ponto_central(df):
-    """
-    Calcula o ponto central (mediana de X, Y e Z) para cada formation no DataFrame.
-
-    Parâmetros:
-    df (pd.DataFrame): O DataFrame contendo as colunas 'X', 'Y', 'Z' e 'formation'.
-
-    Retorna:
-    df_central (pd.DataFrame): Um novo DataFrame com uma linha para cada formation e as colunas 'X', 'Y' e 'Z' contendo os pontos centrais.
-    """
-    df_central = df.groupby("formation").agg({"X": "median", "Y": "median", "Z": "median"}).reset_index()
-    return df_central
-
-
-df_reduzido_central = ponto_central(df_reduzido)
-
-
-# ------------------------------------------------------------#
-# Checkar overlap
-# ------------------------------------------------------------#
-
-
-def check_overlap(df):
-    """
-    Function to check if any point in a formation is higher or lower than the points in other formations.
-
-    Parameters:
-    df (pandas.DataFrame): DataFrame containing the points.
-
-    Returns:
-    overlap_dict (dict): Dictionary containing the overlapping points for each formation.
-    """
-    # Sort the DataFrame by formation and Z in ascending order
-    df_sorted = df.sort_values(by=["formation", "Z"], ascending=[True, False])
-
-    # Get the unique formations
-    formations = df_sorted["formation"].unique()
-
-    # Initialize a dictionary to store the overlapping points for each formation
-    overlap_dict = {}
-
-    # Iterate over the formations
-    for i in range(len(formations)):
-        # Initialize an empty DataFrame to store the overlapping points for the current formation
-        df_overlap = pd.DataFrame()
-
-        # Get the points for the current formation
-        current_points = df_sorted[df_sorted["formation"] == formations[i]]
-
-        # Iterate over the other formations
-        for j in range(i + 1, len(formations)):
-            # Get the points for the other formation
-            other_points = df_sorted[df_sorted["formation"] == formations[j]]
-
-            # Find the points in the current formation that are lower than the points in the other formation
-            overlap_points = current_points[current_points["Z"] < other_points["Z"].max()]
-
-            # Append the overlapping points to df_overlap
-            df_overlap = pd.concat([df_overlap, overlap_points])
-
-        # Add df_overlap to overlap_dict
-        overlap_dict[formations[i]] = df_overlap
-
-    # Return the dictionary containing the overlapping points for each formation
-    return overlap_dict
-
-
-overlap_dict = check_overlap(df_reduzido)
-for formation, df_overlap in overlap_dict.items():
-    if df_overlap.empty:
-        print(f"There are no overlapping points in the {formation} formation.")
-    else:
-        print(f"The following points in the {formation} formation are overlapping:")
-        print(df_overlap)
+n_ajustar = 300
+df_ajustado = adjust_z(df_reduzido, n_ajustar)
+f_ajustado = "sp_" + valor_red_str + "m" + "_" + scaled_str + "_" + str(n_ajustar) + "m_ajustado.csv"
+df_ajustado.to_csv(dir_processed + f_ajustado, index=False)
+print(df_ajustado["Y"].min(), df_ajustado["Y"].max())
+print(df_ajustado["X"].min(), df_ajustado["X"].max())
+print(df_ajustado["Z"].min(), df_ajustado["Z"].max())

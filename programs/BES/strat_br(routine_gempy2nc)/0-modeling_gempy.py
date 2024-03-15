@@ -3,6 +3,7 @@ import time
 import math
 import gempy as gp
 import pickle
+import datetime
 
 import warnings
 
@@ -65,20 +66,14 @@ sol = gp.compute_model(
 
 # Seção transversal do modelo
 gp.plot_2d(geo_model, direction="y", show_data=False, show_lith=True, ve=2, legend=True)
-gp.plot_2d(
-    geo_model,
-    direction="x",
-    show_data=False,
-    show_lith=True,
-    ve=5,
-    legend=True,
-)
+gp.plot_2d(geo_model, direction="x", show_data=False, show_lith=True, ve=5, legend=True)
 
 # Ver os dados em 3D
 gpv = gp.plot_3d(geo_model, image=False, plotter_type="background", show_data=False, ve=5)
 
 # Save geo_model to a file
-fn = f"{model_name}_{resolution[0]}x_{resolution[1]}y_{resolution[2]}z.pkl"
+date_t = datetime.datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
+fn = f"{model_name}_{resolution[0]}x_{resolution[1]}y_{resolution[2]}z_{date_t}.pkl"
 with open(save_path_model + fn, "wb") as f:
     pickle.dump(geo_model, f)
 
