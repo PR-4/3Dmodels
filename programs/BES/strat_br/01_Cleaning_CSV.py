@@ -9,24 +9,27 @@ from sklearn.preprocessing import MinMaxScaler
 # -----------------------------#
 # NC to DF to CSV
 # -----------------------------#
-path_raw = "../../../input/BES/stratbr_grid_v4/raw/"
-path_processed = "../../../input/BES/stratbr_grid_v4/processed/"
-path_interim = "../../../input/BES/stratbr_grid_v4/interim/"
+path_raw = "../../../input/BES/stratbr/new_tests_v5/raw/"
+path_interim = "../../../input/BES/stratbr/new_tests_v5/interim/"
+path_processed = "../../../input/BES/stratbr/new_tests_v5/processed/"
+
 
 # ---------------------------------------------------------------------#
 # --------------------- GEMPY FORMAT ROUTINE --------------------------#
 # ---------------------------------------------------------------------#
 
 # Sea Floor Creation
-df_89 = pd.read_csv("../../../input/BES/stratbr_grid_v3/raw/merged_estrut_89.0.csv")
-df_sf = df_89.copy().drop(columns=["time", "litho", "Z"])  # Drop time and litho columns
-df_sf["Z"] = 0  # Add Z column with 0 value
-df_sf["formation"] = "sf"  # Add formation column with sf value
-df_sf["X"] = df_sf["X"].astype(int)  # Convert float to int
-df_sf["Y"] = df_sf["Y"].astype(int)  # Convert float to int
-df_sf.describe()
-df_sf.info()
-df_sf.to_csv(path_processed + "sf.csv", index=False)  # save to path_processed
+df_89 = pd.read_csv(path_raw + "merged_estrut_89.0.csv")
+# df_top = df_89.copy().drop(columns=["time", "litho", "Z"])  # Drop time and litho columns
+df_top = df_89.copy().drop(columns=["time", "litho"])  # Drop time and litho columns
+# df_top["Z"] = 0  # Add Z column with 0 value
+df_top["formation"] = "top"  # Add formation column with sf value
+df_top["X"] = df_top["X"].astype(int)  # Convert float to int
+df_top["Y"] = df_top["Y"].astype(int)  # Convert float to int
+df_top["Z"] = df_top["Z"].astype(int)  # Convert float to int
+df_top.describe()
+df_top.info()
+df_top.to_csv(path_processed + "1-top.csv", index=False)  # save to path_processed
 
 # 89 Ma
 df_89 = pd.read_csv(path_raw + "merged_estrut_89.0.csv")  # Read csv
@@ -72,9 +75,9 @@ df_100 = df_100.drop(columns=["time", "litho"])
 df_100["X"] = df_100["X"].astype(int)
 df_100["Y"] = df_100["Y"].astype(int)
 df_100["Z"] = df_100["Z"].astype(int)
-df_100["formation"] = "bes_100"
+df_100["formation"] = "bes"
 # save
-df_100.to_csv(path_processed + "merged_estrut_100.0.csv", index=False)
+df_100.to_csv(path_processed + "2-bes.csv", index=False)
 
 # ---------------------------------------------------------------------#
 # For all files
