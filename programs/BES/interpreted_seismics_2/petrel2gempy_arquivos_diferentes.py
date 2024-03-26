@@ -71,13 +71,13 @@ def criar_df(caminho_arquivo, skip_rows=None, neg=True):
 
 
 # Caminho para o diretório com os arquivos
-dir_path = "../../../input/BES/interpreted_seismics_2/raw/"
+dir_path = "../../../input/BES/interpreted_seismics_2/horizontes/raw/"
 
 # Caminho para salvar o arquivo intermediario em .csv
-dir_interim = "../../../input/BES/interpreted_seismics_2/interim/"
+dir_interim = "../../../input/BES/interpreted_seismics_2/horizontes/"
 
 # Caminho para salvar o arquivo final em .csv
-dir_processed = "../../../input/BES/interpreted_seismics_2/processed/"
+dir_processed = "../../../input/BES/interpreted_seismics_2/horizontes/"
 
 # Lista para armazenar os DataFrames
 dfs = []
@@ -190,13 +190,13 @@ def reduzir_pontos(df, eixo, n_pontos=1000, scale=False):
 
 
 # Chamar a função reduzir_pontos para reduzir o número de pontos no DataFrame df_final a cada 1000 metros nas coordenadas X e Y
-valor_reduzido = 500
+valor_reduzido = 1000
 scaled = False
 scaled_str = "scaled" if scaled else "not_scaled"
 print(scaled_str)  # Saída: "scaled"
 df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido, scale=scaled)
-print(df_reduzido["Y"].min(), df_reduzido["Y"].max())
 print(df_reduzido["X"].min(), df_reduzido["X"].max())
+print(df_reduzido["Y"].min(), df_reduzido["Y"].max())
 print(df_reduzido["Z"].min(), df_reduzido["Z"].max())
 print("")
 print(df_reduzido)

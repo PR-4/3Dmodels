@@ -64,10 +64,10 @@ def criar_df(caminho_arquivo):
 
 
 # Caminho para o diretório com os arquivos
-dir_path = "../../../input/BES/interpreted_seismics_2/raw/"
+dir_path = "../../../input/BES/interpreted_seismics_2/surfaces/raw/"
 
 # Caminho para salvar o arquivo final em .csv
-dir_save = "../../../input/BES/interpreted_seismics_2/interim/"
+dir_save = "../../../input/BES/interpreted_seismics_2/surfaces/"
 
 # Lista para armazenar os DataFrames
 dfs = []
@@ -143,18 +143,20 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
 
 
 # Chamar a função reduzir_pontos para reduzir o número de pontos no DataFrame df_final a cada 1000 metros nas coordenadas X e Y
-valor_reduzido = 1500
+valor_reduzido = 500
 df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido)
 df_reduzido.describe()
-df_reduzido["Y"].min()
-df_reduzido["Y"].max()
 df_reduzido["X"].min()
 df_reduzido["X"].max()
+df_reduzido["Y"].min()
+df_reduzido["Y"].max()
+df_reduzido["Z"].min()
+df_reduzido["Z"].max()
 
 df_reduzido["formation"].unique()
 
 # Salvar o DataFrame reduzido em um arquivo .csv
-path_save = "../../../input/BES/interpreted_seismics_2/interim/"
+path_save = "../../../input/BES/interpreted_seismics_2/surfaces/"
 valor_red_str = str(valor_reduzido)
 f_name = "surface_points_" + valor_red_str + "m.csv"
 df_reduzido.to_csv(path_save + f_name, index=False)
