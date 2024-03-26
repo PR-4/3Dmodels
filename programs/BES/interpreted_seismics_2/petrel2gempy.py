@@ -146,12 +146,9 @@ def reduzir_pontos(df, eixo, n_pontos=1000):
 valor_reduzido = 500
 df_reduzido = reduzir_pontos(df_final, "xy", valor_reduzido)
 df_reduzido.describe()
-df_reduzido["X"].min()
-df_reduzido["X"].max()
-df_reduzido["Y"].min()
-df_reduzido["Y"].max()
-df_reduzido["Z"].min()
-df_reduzido["Z"].max()
+print(df_reduzido["X"].min(), df_reduzido["X"].max())
+print(df_reduzido["Y"].min(), df_reduzido["Y"].max())
+print(df_reduzido["Z"].min(), df_reduzido["Z"].max())
 
 df_reduzido["formation"].unique()
 
