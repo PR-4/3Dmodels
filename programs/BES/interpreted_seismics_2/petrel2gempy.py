@@ -64,10 +64,10 @@ def criar_df(caminho_arquivo):
 
 
 # Caminho para o diretório com os arquivos
-dir_path = "../../../input/BES/interpreted_seismics_2/surfaces/raw/"
+dir_path = "../../../input/BES/interpreted_seismics_2/horizontes/raw/"
 
 # Caminho para salvar o arquivo final em .csv
-dir_save = "../../../input/BES/interpreted_seismics_2/surfaces/"
+dir_save = "../../../input/BES/interpreted_seismics_2/horizontes/"
 
 # Lista para armazenar os DataFrames
 dfs = []

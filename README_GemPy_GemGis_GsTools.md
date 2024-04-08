@@ -15,7 +15,7 @@ YML: geomodeling_package_windows.yml
 - pip install PVGeo==2.1
 - pip install notebook
 
-## GEMPY 3.0
+## GEMPY 3.0 (Não funciona)
 - conda create -n NAME python =3.10
 - conda activate NAME
 - pip install gemgis

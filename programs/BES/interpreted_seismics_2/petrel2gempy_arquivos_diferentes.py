@@ -61,7 +61,7 @@ def criar_df(caminho_arquivo, skip_rows=None, neg=True):
     return df
 
 
-# path = "../../../input/BES/interpreted_seismics_2/raw/MAASTRICHTIANO"
+# path = "../../../input/BES/interpreted_seismics_2/surfaces_final/raw/"
 # df = criar_df(path)
 # print(df)
 
@@ -71,13 +71,13 @@ def criar_df(caminho_arquivo, skip_rows=None, neg=True):
 
 
 # Caminho para o diretório com os arquivos
-dir_path = "../../../input/BES/interpreted_seismics_2/horizontes/raw/"
+dir_path = "../../../input/BES/interpreted_seismics_2/surfaces_final/raw/"
 
 # Caminho para salvar o arquivo intermediario em .csv
-dir_interim = "../../../input/BES/interpreted_seismics_2/horizontes/"
+dir_interim = "../../../input/BES/interpreted_seismics_2/surfaces_final/"
 
 # Caminho para salvar o arquivo final em .csv
-dir_processed = "../../../input/BES/interpreted_seismics_2/horizontes/"
+dir_processed = "../../../input/BES/interpreted_seismics_2/surfaces_final/"
 
 # Lista para armazenar os DataFrames
 dfs = []
@@ -207,52 +207,6 @@ print(df_reduzido["formation"].unique())
 valor_red_str = str(valor_reduzido)
 f_name = "sp_" + valor_red_str + "m" + "_" + scaled_str + ".csv"
 df_reduzido.to_csv(dir_processed + f_name, index=False)
-
-# ------------------------------------------------------------#
-# Criando orientation points
-# ------------------------------------------------------------#
-
-
-def get_first_point(df, formation):
-    first_point = df[df["formation"] == formation][["X", "Y", "Z"]].iloc[0]
-    return first_point
-
-
-def create_orientation(df, formations):
-    # Initialize an empty list to store the data
-    data = []
-
-    # Loop over the formations
-    for formation in formations:
-        # Get the first point of the formation
-        first_point = get_first_point(df, formation)
-
-        # Append the data to the list
-        data.append(
-            {
-                "X": first_point["X"],
-                "Y": first_point["Y"].round(2),
-                "Z": first_point["Z"].round(2),
-                "azimuth": 0,
-                "dip": 0,
-                "polarity": 1,
-                "formation": formation,
-            }
-        )
-
-    # Create the DataFrame
-    df_orientation = pd.DataFrame(data)
-
-    return df_orientation
-
-
-# Usage
-formations = ["top"]
-# formations = df_reduzido["formation"].unique()
-df_orientation = create_orientation(df_reduzido, formations)
-formations_str = "_".join(formations)
-op_fn = "op_" + formations_str + "_" + valor_red_str + "m" + "_" + scaled_str + ".csv"
-df_orientation.to_csv(dir_processed + op_fn, index=False)
 
 
 # ------------------------------------------------------------#
