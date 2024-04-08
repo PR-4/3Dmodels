@@ -166,3 +166,6 @@ output/BES/interpreted_seismics_2/surfaces/teste_2/res100x100x100/BES-Seismics-S
 programs/BES/interpreted_seismics/version_1/BES_model_seismic_v8.pickle
 references/Thomas_Paper/Data/Geo-structural model/Geo-structural_model_NJ_shelf.pkl
 output/BES/StartBR/novos_testes/gempy_2.3.1/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54_results/StratBR2GemPy_100x_100y_100z_2024-03-14-10-33-54.pkl
+input/BES/stratbr/nc/BESv2_Mapas_089.0-100.0Ma.nc
+output/BES/interpreted_seismics_2/surfaces_final/teste_1/res100x100x100/modelo.pkl
+output/BES/StartBR/v6/StratBR_BES_v6_50x_50y_50z_2024-04-08-17-15-06.pkl
