@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Lê o arquivo .txt e transforma em um DataFrame
-df = pd.read_csv("../../input/Paper_1/raw/synthetic_surfaces.txt", sep=" ")
+df = pd.read_csv("../../input/Paper_1/raw/synthetic_surfaces_6.txt", sep=" ")
 
 # Mostra as primeiras linhas do DataFrame
 print(df.head())
@@ -31,4 +31,4 @@ df_final = pd.concat([df, df_0, df_500, df_1500, df_2000])
 print(df_final.describe())
 
 # Salvar o arquivo
-df_final.to_csv("../../input/Paper_1/processed/synthetic_surfaces.csv", index=False)
+df_final.to_csv("../../input/Paper_1/processed/synthetic_surfaces_6.csv", index=False)
