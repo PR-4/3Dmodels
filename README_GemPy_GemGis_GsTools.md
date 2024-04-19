@@ -9,7 +9,7 @@ YML: geomodeling_package_windows.yml
 - conda create -n NAME python =3.10
 - conda activate NAME
 - conda install -c conda-forge aesara
-- pip install gempy
+- pip install gempy==2.3.1
 - pip install gstools
 - pip install gemgis
 - pip install PVGeo==2.1
