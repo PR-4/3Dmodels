@@ -13,7 +13,7 @@ gempy_2.3.1_windows.yml
 - Create a new enviroment:
     - conda env create --name gempy python=3.10
     - conda install -c conda-forge aesara
-    - pip install gempy
+    - pip install gempy==2.3.1
     - pip install notebook
 
 # Versioning
