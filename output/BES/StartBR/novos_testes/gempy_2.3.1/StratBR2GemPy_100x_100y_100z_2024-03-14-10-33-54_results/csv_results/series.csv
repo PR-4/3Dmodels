@@ -1,3 +1,0 @@
-order_series,series,BottomRelation,isActive,isFault,isFinite
-1,Strat_Series,Erosion,True,False,False
-2,Basement_series,Erosion,False,False,False
